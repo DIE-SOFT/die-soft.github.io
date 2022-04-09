@@ -18,3 +18,5 @@ Placeholder homepage for DIE SOFT, LLC. A tiny indie game studio.
   </article>
 {% endfor %}
 
+{% include mce-signup.html %}
+
