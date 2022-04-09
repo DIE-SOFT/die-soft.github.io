@@ -4,7 +4,7 @@ Placeholder homepage for DIE SOFT, LLC. A tiny indie game studio.
 
 ### Games
 
-![Cover Image](/assets/images/NemoCoverImage4K.png)
+[Little Nemo](/little-nemo)
 
 ### Posts
 
