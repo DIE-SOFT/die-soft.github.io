@@ -8,6 +8,12 @@ twitter_username: "diesoftgames"
 google_analytics: G-CQW2YSYWZL
 
 defaults:
-  - scope:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "markdown-container"
+  -
+    scope:
       path: "/_posts"
       type: post
