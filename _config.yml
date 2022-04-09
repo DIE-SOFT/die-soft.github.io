@@ -1,0 +1,13 @@
+title: "DIE SOFT"
+author: "DIE SOFT, LLC"
+description: "A tiny indie game studio working on 'Little Nemo and the Guardians of Slumberland'"
+
+email: "diesoftgames@gmail.com"
+twitter_username: "diesoftgames"
+
+google_analytics: G-CQW2YSYWZL
+
+defaults:
+  - scope:
+      path: "/_posts"
+      type: post
