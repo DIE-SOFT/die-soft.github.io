@@ -22,7 +22,7 @@ svg {
 header.diesoft,
 footer.diesoft {
     width: 100%;
-    background-color: $diesoft-gray;
+    background-color: $diesoft-black;
     color: $diesoft-white;
     @include font-baloo-thambi;
 
@@ -61,12 +61,20 @@ footer.diesoft {
 }
 
 .copyright-notice {
-    color: $diesoft-pale;
+    color: $diesoft-gray;
     align-self: center;
 }
 
 #body-content {
     flex-grow: 1;
+    font-size: 16px;
+    @include font-montserrat;
+
+    em {
+        font-style: normal;
+        font-weight: bold;
+        color: $diesoft-blue;
+    }
 
     .markdown-body {
         @include font-montserrat;
@@ -83,7 +91,7 @@ ul.social {
     li {
         display: inline-block;
         align-self: center;
-        padding-left: 1em;
+        padding-left: .8em;
     }
 
     a {
@@ -96,16 +104,26 @@ ul.social {
 
 .nemo-banner {
     position: relative;
+    height: 552px;
+
+    .container-lg {
+        position: relative;
+    }
 
     img {
         display: block;
-        width: 100%;
+    }
+
+    .overlaid {
+        top: 0;
+        left: 0;
+        position: absolute;
     }
 }
 
 .nemo-banner::after {
     content: "";
-    background-image: url("/assets/images/little-nemo/nemo-banner-blur-bg.jpg");
+    background-image: url("/assets/images/little-nemo/banner-bg.jpg");
     background-size: cover;
     background-position: center;
     opacity: 1;
