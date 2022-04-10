@@ -1,10 +1,118 @@
 // Variables
 @import "./lib/variables/colors.scss";
 
-header.diesoft {
+// Mixins
+@import "./lib/mixins/fonts.scss";
+
+@import "flexbox";
+
+html, body {
+    height: 100%;
+
+    > div {
+        height: 100%;
+    }
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+}
+
+header.diesoft,
+footer.diesoft {
+    width: 100%;
     background-color: $diesoft-gray;
+    color: $diesoft-white;
+    @include font-baloo-thambi;
+
+    a {
+        color: $diesoft-yellow;
+    }
+}
+
+header.diesoft {
+    > * {
+        align-self: center;
+        line-height: 0;
+    }
 }
 
 footer.diesoft {
-    background-color: $diesoft-gray;
+    font-size: 1.2em;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    svg {
+        width: 1.5em;
+        height: 1.5em;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: .5em;
+    }
+
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.copyright-notice {
+    color: $diesoft-pale;
+    align-self: center;
+}
+
+#body-content {
+    flex-grow: 1;
+
+    .markdown-body {
+        @include font-montserrat;
+    }
+}
+
+ul.social {
+    align-items: center;
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 2em;
+    line-height: 0;
+
+    li {
+        display: inline-block;
+        align-self: center;
+        padding-left: 1em;
+    }
+
+    a {
+        display: inline-block;
+        align-self: center;
+        color: $diesoft-white;
+        text-decoration: none;
+    }
+}
+
+.nemo-banner {
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.nemo-banner::after {
+    content: "";
+    background-image: url("/assets/images/little-nemo/nemo-banner-blur-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }

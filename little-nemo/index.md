@@ -1,5 +1,4 @@
 ---
-layout: diesoft
 ---
 # Little Nemo and the Guardians of Slumberland
 

@@ -1,28 +1,32 @@
 ---
 layout: default
 ---
-<header class="diesoft">
-    <span>DIE SOFT</span>
-    <ul class="social">
-        <li>Email</li>
-        <li>Discord</li>
-        <li>Twitter</li>
-        <li>TikTok</li>
-    </ul>
-    <nav>
-        <ul>
-            <li><a href="/">Games</a></li>
-            <li><a href ="/blog">Dev Log</a></li>
-            <li><a href="/about">About</a></li>
-        </ul>
-    </nav>
-</header>
-{{ content }}
-<footer class="diesoft">
-    <span class="copyright-notice">
-        Copyright © DIE SOFT, LLC
-    </span>
-    <div class="email-signup">
-        {% include mce-signup.html %}
+<div class="flex-column">
+    <header class="diesoft">
+        <div class="container-lg px-3 my-3 flex-row">
+            <a href="/"><img src="/assets/images/diesoft/header-logo.png" /></a>
+            <div class="flex-filler"></div>
+            <ul class="social flex-row">
+                <li><a href="mailto:contact@diesoft.games"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#envelope"/></svg></a></li>
+                <li><a href="https://discord.com/invite/9NymgSJAVp"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#discord"/></svg></a></li>
+                <li><a href="https://twitter.com/diesoftgames"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#twitter"/></svg></a></li>
+                <li><a href="https://tiktok.com/@diesoftgames"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#tiktok"/></svg></a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="body-content">
+    {{ content }}
     </div>
-</footer>
+    <footer class="diesoft">
+        <div class="container-lg px-3 my-3 flex-row">
+            <a class="py-2" href="http://eepurl.com/hZcvJP">
+                <svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#envelope"/></svg>
+                <span>Sign up for updates!</span>
+            </a>
+            <div class="flex-filler"></div>
+            <span class="copyright-notice">
+                Copyright © DIE SOFT, LLC
+            </span>
+        </div>
+    </footer>
+</div>
