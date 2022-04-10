@@ -107,16 +107,19 @@ ul.social {
     height: 552px;
 
     .container-lg {
+        width: 100%;
         position: relative;
     }
 
     img {
-        display: block;
+        display: none;
     }
 
     .overlaid {
         top: 0;
         left: 0;
+        width: 100%;
+        height: 100%;
         position: absolute;
     }
 }
