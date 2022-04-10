@@ -43,17 +43,6 @@ header.diesoft {
     }
 }
 
-// The header breaks down about here, so we need to shrink it
-@media only screen and (max-width: 430px) {
-    header.diesoft {
-        font-size: 0.75em;
-    }
-
-    footer.diesoft {
-        font-size: .8em !important;
-    }
-}
-
 footer.diesoft {
     font-size: 1.2em;
 
@@ -168,4 +157,35 @@ ul.social {
     right: 0;
     position: absolute;
     z-index: -1;   
+}
+
+// Media Queries
+
+// Retina BG Images
+@media 
+(-webkit-min-device-pixel-ratio: 2) { 
+    .nemo-banner .bg-image {
+        &.nemo {
+            background-image: url("/assets/images/little-nemo/banner-nemo@2x.png");
+        }
+
+        &.hill {
+            background-image: url("/assets/images/little-nemo/banner-hill@2x.png");
+        }
+
+        &.logo {
+            background-image: url("/assets/images/little-nemo/banner-logo@2x.png");
+        }
+    }
+}
+
+// The header breaks down about here, so we need to shrink it
+@media only screen and (max-width: 430px) {
+    header.diesoft {
+        font-size: 0.75em;
+    }
+
+    footer.diesoft {
+        font-size: .8em !important;
+    }
 }
