@@ -20,6 +20,11 @@ svg {
     height: 1em;
 }
 
+a {
+    color: $diesoft-hotpink;
+    text-decoration: underline;
+}
+
 header.diesoft,
 footer.diesoft {
     width: 100%;
@@ -63,6 +68,14 @@ footer.diesoft {
         display: inline-block;
         vertical-align: middle;
     }
+}
+
+.container-lg img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .copyright-notice {
