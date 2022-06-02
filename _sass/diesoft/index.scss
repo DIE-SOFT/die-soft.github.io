@@ -20,9 +20,29 @@ svg {
     height: 1em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: $diesoft-black;
+}
+
 a {
     color: $diesoft-hotpink;
     text-decoration: underline;
+}
+
+a.cta {
+    align-self: center;
+    background-color: $kickstarter-green;
+    color: $diesoft-white;
+    text-decoration: none;
+    padding: 1em 2em;
+    font-size: 2em;
+    border-radius: .5em;
+    margin: 1em;
+    @include font-baloo-thambi;
+
+    &:hover {
+        background-color: $kickstarter-green / 1.25;
+    }
 }
 
 header.diesoft,
@@ -118,6 +138,17 @@ ul.social {
         align-self: center;
         color: $diesoft-white;
         text-decoration: none;
+    }
+}
+
+.devlog {
+    article {
+        display: block;
+        border: 1px solid #eee;
+        border-radius: .25em;
+        padding: 1em 2em;
+        margin-top: .5em;
+        margin-bottom: .5em;
     }
 }
 
