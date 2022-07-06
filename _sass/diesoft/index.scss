@@ -31,7 +31,7 @@ a {
 
 a.cta {
     align-self: center;
-    background-color: $kickstarter-green;
+    background-color: $diesoft-hotpink;
     color: $diesoft-white;
     text-decoration: none;
     padding: 1em 2em;
@@ -41,7 +41,7 @@ a.cta {
     @include font-baloo-thambi;
 
     &:hover {
-        background-color: $kickstarter-green / 1.25;
+        background-color: $diesoft-hotpink / 1.25;
     }
 }
 
@@ -154,6 +154,7 @@ ul.social {
 
 .nemo-banner {
     position: relative;
+    background: black;
 
     .padded {
         position: relative;
@@ -187,20 +188,32 @@ ul.social {
             background-size: 45%;
         }
     }
+
+    .container-lg {
+        position: relative;
+        z-index: 1;
+    }
+
+    iframe.ytplayer {
+        box-shadow: 0 0 40px 10px black;
+    }
+    
+    &::after {
+        content: "";
+        background-image: url("/assets/images/little-nemo/banner-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
 }
 
-.nemo-banner::after {
-    content: "";
-    background-image: url("/assets/images/little-nemo/banner-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
+body.ytvideo-playing .nemo-banner::after {
+    opacity: .25;
 }
 
 // Media Queries
