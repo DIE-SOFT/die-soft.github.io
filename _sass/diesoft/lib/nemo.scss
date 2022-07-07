@@ -1,9 +1,9 @@
 // Variables
 @import "./variables/colors.scss";
-@import "./variables/nemo-colors.scss";
 // Mixins
 @import "./mixins/fonts.scss";
 
+$nemo-dark-blue: #0d0b4c;
 
 .nemo-banner {
     position: relative;
@@ -49,6 +49,7 @@
 
     .ytplayer {
         box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 1s;
     }
 
     iframe.ytplayer {
@@ -66,6 +67,7 @@
         bottom: 0;
         right: 0;
         position: absolute;
+        transition: opacity 1s;
     }
 }
 
