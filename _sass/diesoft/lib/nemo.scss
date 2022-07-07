@@ -1,0 +1,110 @@
+// Variables
+@import "./variables/colors.scss";
+@import "./variables/nemo-colors.scss";
+// Mixins
+@import "./mixins/fonts.scss";
+
+
+.nemo-banner {
+    position: relative;
+    background: black;
+
+    .padded {
+        position: relative;
+        box-sizing: border-box;
+        padding: 24%;
+    }
+
+    .bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+
+        &.nemo {
+            background-image: url("/assets/images/little-nemo/banner-nemo.png");
+            background-position: right 23% center;
+            background-size: 27%;
+        }
+
+        &.hill {
+            background-image: url("/assets/images/little-nemo/banner-hill.png");
+            background-position: center bottom;
+            background-size: 75%;
+        }
+
+        &.logo {
+            background-image: url("/assets/images/little-nemo/banner-logo.png");
+            background-position: left 8% top 14%;
+            background-size: 45%;
+        }
+    }
+
+    .container-md {
+        position: relative;
+        z-index: 1;
+    }
+
+    .ytplayer {
+        box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    iframe.ytplayer {
+        box-shadow: 0 0 40px 10px black;
+    }
+    
+    &::after {
+        content: "";
+        background-image: url("/assets/images/little-nemo/banner-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+}
+
+body.ytvideo-playing .nemo-banner::after {
+    opacity: .25;
+}
+
+.ytplayer {
+    background-color: $nemo-dark-blue;
+
+    &::after {
+        background-color: $nemo-dark-blue;
+    }
+    
+    &:hover::after {
+        background-color: $diesoft-blue;
+    }
+}
+
+.kickstarter img {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+// Retina BG Images
+@media 
+(-webkit-min-device-pixel-ratio: 2) { 
+    .nemo-banner .bg-image {
+        &.nemo {
+            background-image: url("/assets/images/little-nemo/banner-nemo@2x.png");
+        }
+
+        &.hill {
+            background-image: url("/assets/images/little-nemo/banner-hill@2x.png");
+        }
+
+        &.logo {
+            background-image: url("/assets/images/little-nemo/banner-logo@2x.png");
+        }
+    }
+}

@@ -1,10 +1,7 @@
 // Variables
 @import "./lib/variables/colors.scss";
-
 // Mixins
 @import "./lib/mixins/fonts.scss";
-
-@import "flexbox";
 
 html, body {
     height: 100%;
@@ -90,7 +87,8 @@ footer.diesoft {
     }
 }
 
-.container-lg img {
+.container-lg img,
+.container-md img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -152,90 +150,7 @@ ul.social {
     }
 }
 
-.nemo-banner {
-    position: relative;
-    background: black;
-
-    .padded {
-        position: relative;
-        box-sizing: border-box;
-        padding: 24%;
-    }
-
-    .bg-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-
-        &.nemo {
-            background-image: url("/assets/images/little-nemo/banner-nemo.png");
-            background-position: right 23% center;
-            background-size: 27%;
-        }
-
-        &.hill {
-            background-image: url("/assets/images/little-nemo/banner-hill.png");
-            background-position: center bottom;
-            background-size: 75%;
-        }
-
-        &.logo {
-            background-image: url("/assets/images/little-nemo/banner-logo.png");
-            background-position: left 8% top 14%;
-            background-size: 45%;
-        }
-    }
-
-    .container-lg {
-        position: relative;
-        z-index: 1;
-    }
-
-    iframe.ytplayer {
-        box-shadow: 0 0 40px 10px black;
-    }
-    
-    &::after {
-        content: "";
-        background-image: url("/assets/images/little-nemo/banner-bg.jpg");
-        background-size: cover;
-        background-position: center;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-}
-
-body.ytvideo-playing .nemo-banner::after {
-    opacity: .25;
-}
-
 // Media Queries
-
-// Retina BG Images
-@media 
-(-webkit-min-device-pixel-ratio: 2) { 
-    .nemo-banner .bg-image {
-        &.nemo {
-            background-image: url("/assets/images/little-nemo/banner-nemo@2x.png");
-        }
-
-        &.hill {
-            background-image: url("/assets/images/little-nemo/banner-hill@2x.png");
-        }
-
-        &.logo {
-            background-image: url("/assets/images/little-nemo/banner-logo@2x.png");
-        }
-    }
-}
-
 // The header breaks down about here, so we need to shrink it
 @media only screen and (max-width: 430px) {
     header.diesoft {
@@ -246,3 +161,7 @@ body.ytvideo-playing .nemo-banner::after {
         font-size: .8em !important;
     }
 }
+
+// Domain specific styles at bottom so they take priority
+@import "./lib/youtube.scss";
+@import "./lib/nemo.scss";
