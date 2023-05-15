@@ -9,7 +9,7 @@ Happy Holidays! 🥂❄️ I’m posting the monthly update a little early again
 
 I hope everyone reading this has a cheery and happy holiday season!
 
-##  **Progress for this Month**❄️
+##  Progress for this Month❄️
 
 For the Sleepwalkers and Guardians reading this update: there’s a new build that I just uploaded to Steam yesterday, so you’ll be able to check this stuff out first-hand if you’d like. (If you have the “Early Access Builds 💾" reward tier and don’t have access to that yet, hop into the [Discord ](https://discord.com/invite/9NymgSJAVp)and ping me, or just head to our [Pledge Manager page](https://diesoft.pledgemanager.com/projects/little-nemo/) and enter the email address associated with your Kickstarter account).
 
@@ -35,13 +35,13 @@ Rescuing Minerva will allow her to help you remember the dream of the Dreamswept
 
 This month I also wrapped up the assets for the In-Between enough to show it off in a much more finalized state. This was just a matter of finding a styling I liked and re-drawing some of the assets. The central background object became the moon. You’ll find that the moon is an important motif throughout the game. I wonder what that’s about…? 🤔
 
-## **What’s Next? ⛄**
+## What’s Next? ⛄
 
 The plan for January is to get this build into the hands of some content creators so that they can help build some buzz for the launch of a Steam Store presence! 🎉 If you know any content creators that would be appropriate (or if you are one!) then please share [this link for the form](https://docs.google.com/forms/d/1vIkKePDog4gC6fK-zvIMSKhmPAaqk4g7aqUgvIoc6kY/) to get an early build of the game. This boss fight and Guardian rescue work I’ve done was some of the most critical stuff I really wanted to get in there, but I still need to polish things up a bit and flesh out the content in the areas after you get the Yo-Yo. So I’ll be focusing and getting that all finished up and launching the Steam Store for *Little Nemo* so that people can wishlist the game. I’ll also be asking all of you to please help get the word out, so I may do a Kickstarter update just for that in addition to the usual monthly update.
 
 There are some things that I didn’t get to and likely will not make it into this demo (I wanted to explore more enemy types and gimmicks for the Gumdrop Gardens to give a sense of how each area is unique), so I’ll probably dig into that once things are settled with the Steam Store presence launch.
 
-## **Kickstarter Update Visibility**
+## Kickstarter Update Visibility
 
 Just one thing I wanted to give a heads up about: though I’ve been publishing all of these updates publicly, I will likely start making them backer-only in the new year. This is mostly just so that I can continue to share things with all of you Sleepyheads, but still have content that is not yet public so as to save things for bigger reveals and keep from spoiling people on stuff too early. Please let me know if you have thoughts in general about the content that I might be spoiling in future updates. Should I mark things as spoilers, have separate technical and content updates, simply not share spoilers past a certain point? What do you think?
 

@@ -7,17 +7,17 @@ title: Monthly Update 4
 
 Happy Halloween, Sleepyheads! **👻** I wish I could have worked on some fun spooky stuff to show y’all this month, but I’m trying to stick to the plan. In [last month’s update](https://www.kickstarter.com/projects/diesoft/little-nemo/posts/3622667), I laid out a very optimistic list of what I wanted to do this month, understanding that I likely wouldn’t get it all done. Though I didn’t do *all* of it, I got the most important things wrapped up: there is now a playtest build available on Steam for anyone that backed *Little Nemo* at the Sleepwalker tier or above (this is the “💾 Early Builds Access” reward).'
 
-# **How to get Early Builds Access**
+## How to get Early Builds Access
 
 1. First, you’ll need to make sure you have the “Early Builds Access” reward at the tier you backed (if you didn’t, you can increase your pledge if you’d like to help provide feedback with these early builds). You can see the reward tiers [here](https://diesoft.pledgemanager.com/projects/little-nemo/participate/).
 2. Then you’ll have to make sure you’ve filled out the fulfillment survey on  Pledge Manager. If you didn’t yet receive the email invite (those all went out a couple of months ago), you can [re-request the invite be sent](https://diesoft.pledgemanager.com/projects/little-nemo/).
 3. On your Pledge Manager [order summary page](https://diesoft.pledgemanager.com/projects/little-nemo/summary/), click the “Claim my codes” button on the right side of the page.
 4. In Steam, at the bottom left corner of the application, click the “+ Add a game” button, select “Activate a product on Steam…”, and enter the code you redeemed from Pledge Manager.
-    
+   
 
 Some quick notes about this build: there’s almost no content in there right now. This build was mostly for me to get a feel for uploading a build to Steam, see how it runs on peoples’ computers, and find any bugs that pop up from the get go. Make sure to keep an eye out for updates as I’ll be working on bringing in the content that was in the Kickstarter private demo, and then some. If you’re not already in the [Discord](https://discord.com/invite/9NymgSJAVp), please join so you can share your feedback in the #sleepwalker-feedback channel (please note, you need the Sleepwalker or Guardian roles to access that channel, so just ping Dave, that's me 👋, in the Discord if you should have access and don’t yet). Thanks to all the Sleepwalkers and Guardians for your support and for testing out these early builds. It’ll be a huge boon to have y’all scouting for issues and helping identify stuff that needs tweaking. ❤️
 
-# **Progress for this Month 🎃**
+## Progress for this Month 🎃
 
 So figuring out how to get squared away with builds on Steam without having a store presence ready yet for *Little Nemo* was one of the big tasks I was happy to wrap up this month. But of course there’s plenty more I finished up. And here’s what is inarguably one of the most critical, and most requested features that kept popping up from the Kickstarter private demo:
 
@@ -43,9 +43,9 @@ And then some other things I worked on in rapid fire that aren’t as fun to sho
 - I have a good storyboard for a narrative flow “cutscene” of sorts for when Nemo rescues a Guardian. It’s not ready to show off yet, but I hope to get this into the demo soon.
 - I’m continuing to clean up the In-Between (an area that appears as a seam between different thematic zones in Slumberland), so next month I hope to have some good footage of it to show off.
 - And otherwise lots of tweaks to the demo content as I polish it based on feedback.
-   
+  
 
-# **What’s up Next Month?! 🍂**
+## What’s up Next Month?! 🍂
 
 I have some in-progress tasks to finish up, but I’m trying to stay focused on the task of getting a very polished piece of the early game wrapped up and in the hands of Sleepwalkers to poke holes in it. The goal here is to get a good build that I could possibly use as a limited time demo to kick off Little Nemo’s Steam store presence/wishlist campaign sometime this winter.
 
@@ -54,7 +54,7 @@ I have some in-progress tasks to finish up, but I’m trying to stay focused on 
 - Get a bit of Mushroom Marsh playable just to give a taste of it
 - More enemy types and “gimmicks” for each zone
 - Squash bugs in the early builds as Sleepwalkers spot them.
-   
+  
 
 So if all goes well I’ll update the early build over the next week or so, so that there’s actually a bit of content to explore in there, and then continue polishing it and working towards having something that feels “demo ready” by the end of the month.
 

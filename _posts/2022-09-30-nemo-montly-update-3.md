@@ -7,7 +7,7 @@ title: Monthly Update 3
 
 Wow, can you believe we’re wrapping up our third month post-Kickstarter?! It’s been a productive month, and if you've been following along, you’ll see I stayed focused on the things I mentioned I’d be working on in last month’s updates without too many surprises. But let’s get into it:
 
-## **Progress for this Month**
+## Progress for this Month
 
 I wrapped up the final major features I needed for NemoMaker to be properly useful. I won’t get too into that since I chatted a lot about these tools at length in the last two updates, but the major bits of functionality I completed were being able to stack swatches into what I call “books” of thematically corelated swatches (this just allows me to make many more swatches available and I also finished up dpad navigation to make it much easier for me to change swatches when authoring with a controller), and also a property panel so that I can use to update custom properties for swatches, prefabs, and also setting which upgrades Nemo currently has (super helpful for testing). I’ve also just been importing lots of my prefabs into this context so that I can easily just “paint” them into place and it’s been really fun working with all the tools now that they've come together.
 
@@ -33,7 +33,7 @@ And here’s a peek at a [new track for the Gumdrop Gardens](https://youtu.be/Nx
 
 There are also a few small things I worked on this month that I'm gonna hold off to share until they're a little bit further along. I've made some fun improvements to the dialogue system I look forward to showing off some more in next month's update and in the demo for Sleepwalkers. 
 
-## **What’s up Next?!**
+## What’s up Next?!
 
 For this next month, I’m going to hustle to try to get a build in the hands of Sleepwalkers. This might be a little slow because there’s work to do both for engineering, new assets, and figuring out how to best distribute a build. But I’d like to get that done this month so I can start getting feedback and have a build that starts to better show off what the gameplay of *Little Nemo* feels like.
 
@@ -48,10 +48,10 @@ So that work will include:
 
 So that’s a good chunk of work, but I’ve been going at a pace I’m fairly happy with and while I likely won’t accomplish *all* of that, I’m hopeful I can do enough to get a build put together and start getting it into Sleepwalkers’ hands.
 
-## **Kickstarter Friends**
+## Kickstarter Friends
 
-I don’t have any Kickstarter campaigns to share this month, but the [**Dono’s Tale Kickstarter**](https://www.kickstarter.com/projects/superitemstudios/donos-tale) I shared last month is currently live on Kickstarter, so you should check that out, and also just reminder for you to consider going into Kickstarter’s [**video games category**](https://www.kickstarter.com/discover/advanced?category_id=35&sort=magic) and finding and supporting a game that catches your eye. Your support as a backer is invaluable to independent video game creators ❤️
+I don’t have any Kickstarter campaigns to share this month, but the [Dono’s Tale Kickstarter](https://www.kickstarter.com/projects/superitemstudios/donos-tale) I shared last month is currently live on Kickstarter, so you should check that out, and also just reminder for you to consider going into Kickstarter’s [video games category](https://www.kickstarter.com/discover/advanced?category_id=35&sort=magic) and finding and supporting a game that catches your eye. Your support as a backer is invaluable to independent video game creators ❤️
 
-That’s all for this month. As always, please leave feedback in the comments below, or in our [**Discord**](https://discord.com/invite/9NymgSJAVp). Thanks for reading, Sleepyheads! ✨🙌✨
+That’s all for this month. As always, please leave feedback in the comments below, or in our [Discord](https://discord.com/invite/9NymgSJAVp). Thanks for reading, Sleepyheads! ✨🙌✨
 
 -Dave

@@ -4,8 +4,15 @@ title: DIE SOFT Updates
 description: Developer updates from DIE SOFT as we work on "Little Nemo and the Guardians of Slumberland"
 image: /assets/images/little-nemo/trailer-thumbnail.png
 ---
-<div class="container-md px-3 my-5">
-    <ul>
+<div class="container-lg px-3 my-5">
+    <h2>Little Nemo Developer Updates</h2>
+    <p>
+        Here you can find public developer updates originally posted as
+        <a href="https://www.kickstarter.com/projects/diesoft/little-nemo/posts">Kickstarter Updates</a>.
+        Newer posts have been changed to <em>backer only</em>, but once those posts are ready to become
+        public, they'll be posted here.
+    </p>
+    <ul class="posts px-6">
         {% for post in site.posts %}
             <li>
                 <a href="{{ post.url }}">{{ post.title }}</a> <span class="date">[ {{ post.date | date: "%-d %B %Y" }} ]</span>

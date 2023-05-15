@@ -168,8 +168,20 @@ footer.diesoft {
     .markdown-body {
         @include font-montserrat;
 
+        em {
+            font-style: italic;
+            font-weight: normal;
+            color: $diesoft-black;
+        }
+
+        strong {
+            font-style: normal;
+            font-weight: bold;
+            color: $diesoft-blue;
+        }
+
         h2 {
-            margin-top: 3em;
+            margin-top: 2em;
         }
 
         p:has(img) {
@@ -178,12 +190,12 @@ footer.diesoft {
             font-size: .8em;
             font-style: italic;
             font-weight: normal;
-            margin-bottom: 3em;
+            margin-bottom: 2em;
         }
 
         img {
-            margin-top: 3em;
-            margin-bottom: 3em;
+            margin-top: 2em;
+            margin-bottom: 2em;
 
             &:not(:has(+ em)) {
                 margin-bottom: .5em;
@@ -212,6 +224,10 @@ ul.social {
         color: $diesoft-white;
         text-decoration: none;
     }
+}
+
+ul.posts {
+    line-height: 1.75em;
 }
 
 // Media Queries

@@ -9,7 +9,7 @@ Welcome back for another monthly update on the dev progress of *Little Nemo and 
 
 This update is coming a few days later (I typically post these on the last Friday of the month) because I was taking a little break myself. But I do have some fun stuff to share. Some of it is more fun to *show*, and some of it gets a little more into the *technical weeds* a bit.
 
-##  **Progress for this Month** 🦃
+##  Progress for this Month 🦃
 
 I’ve been posting lots of animated gifs to show what’s new in past updates, but I thought I would combine a bunch of stuff together into a nice 4K YouTube video (make sure to full-screen the embed to see it in all its hi-res detail). I’ve been working on the core art assets for Mushroom Marsh, which will most likely be the second or third zone of Slumberland which you will explore. I’ve got some of the main tiles done (though they still need random variation alternate tiles, so it will look a bit repetitive for now) and I’m pretty happy with the tweaks I’ve been making to the background (a mega-flora mushroom forest) and global lighting from what you’ve maybe seen so far from earlier assets shared in the Kickstarter video and animations.
 
@@ -21,7 +21,7 @@ I’ve also been working on the gates that we’ve seen so far in the game. I wa
 
 So I think that video shows off some of the more visible work I did this month, but for anyone more technically inclined, or just likes to get all the details, I’ll share some of the other stuff I’ve been working on.
 
-##  **The Fun Tech Stuff Updates** 🤓
+##  The Fun Tech Stuff Updates 🤓
 
 First I want to give another big shout out to the Sleepwalkers and Guardians that have been helping test the early builds on Steam and providing feedback. It’s been really helpful in pinning down some bugs and making sure they get fixed. So I’ve spent a little bit of time hunting down some of those bugs that I had been punting until now and making sure those got fixed. (Sometimes it's nice to not fix a bug until you're sure people will actually encounter it)
 
@@ -34,11 +34,11 @@ And then getting into the very fine details, I also added some new features to N
 
 ![img](https://ksr-ugc.imgix.net/assets/039/342/194/669724751ef804e56f1c3340e70810a7_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1669670099&gif-q=50&lossless=true&s=19214f2321e5dd50da160030aa6032dc)Here’s a quick look at the small area from the video above as seen in NemoMaker
 
-##  **Status of the Sleepwalker Early Build** 💾
+##  Status of the Sleepwalker Early Build 💾
 
 In the last update, I was hoping to have things feeling “demo ready” by now, and I have made some strides on that front (I’ll have a new build up soon for those of you following along closely which will finally include some difficulty adjustments for the Rocktopus boss encounter) but there is still a critical piece I didn’t finish yet which is the dialogue-centric “cutscene” flow for when you rescue a Guardian. The Guardian of the Dreamswept Plains is Minerva (or Mina), who has been transformed into an owl, and rescuing her will serve as a sort of introduction to the general flow of the game and help set your sights on your primary goal (getting to the Palace and finding King Morpheus). That bit will help set the scene and I think will be important to making this chunk of the game feel “demo ready” so I’ll need a bit more time working on that this month to get there.
 
-##  **What’s Next?** ❄️
+##  What’s Next? ❄️
 
 So next month will be targeting some of the things that I didn’t wrap up this month, and also preparing a Steam store presence (which I’ve also done a bit of work on, but it still needs more work to be as polished as I’d like it to be).
 

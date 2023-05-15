@@ -7,9 +7,9 @@ title: Monthly Update 2
 
 Welcome back, Sleepyheads. We’ve already wrapped up our second month since the Kickstarter concluded, so it’s time for another *development update*! 🎉
 
-But before I get into what I’ve been working on, just a reminder that pre-orders are available [**via PledgeManager**](https://diesoft.pledgemanager.com/projects/little-nemo/participate/), and also there are still lots of you that haven’t filled out your [**backer surveys**](https://diesoft.pledgemanager.com/projects/little-nemo/) yet. Please make sure to get that filled out soon so you don’t forget. When it comes time for fulfillment, I’ll only be able to fulfill your order if you’ve filled out your survey! Of course there'll be other reminders, but best to take care of it now 😊
+But before I get into what I’ve been working on, just a reminder that pre-orders are available [via PledgeManager](https://diesoft.pledgemanager.com/projects/little-nemo/participate/), and also there are still lots of you that haven’t filled out your [backer surveys](https://diesoft.pledgemanager.com/projects/little-nemo/) yet. Please make sure to get that filled out soon so you don’t forget. When it comes time for fulfillment, I’ll only be able to fulfill your order if you’ve filled out your survey! Of course there'll be other reminders, but best to take care of it now 😊
 
-This past month I’ve been continuing to work on the authoring tooling (this is a "game" I use to build and test the world of Slumberland, I usually just refer to it as *NemoMaker*). It just needs a bit more work before it’s in a place where I can use it to build the early parts of the game for a Sleepwalker test build. If you didn’t read the [**previous update**](https://www.kickstarter.com/projects/diesoft/little-nemo/posts/3569416), check it out as I go into some details about why I’m building my own custom tooling for *Little Nemo*.
+This past month I’ve been continuing to work on the authoring tooling (this is a "game" I use to build and test the world of Slumberland, I usually just refer to it as *NemoMaker*). It just needs a bit more work before it’s in a place where I can use it to build the early parts of the game for a Sleepwalker test build. If you didn’t read the [previous update](https://www.kickstarter.com/projects/diesoft/little-nemo/posts/3569416), check it out as I go into some details about why I’m building my own custom tooling for *Little Nemo*.
 
 ## This Month’s Progress Breakdown
 
@@ -39,7 +39,7 @@ We also have some amazing new sound effects for the menus now, courtesy of Jonat
 
 ## Sleepwalker Stream!
 
-I’m going to show off some of some of this stuff in more detail in a Sleepwalker stream next week on **Thursday, September 1st** at **2pm** (**EDT**). While this isn’t quite playtesting, it gives me an opportunity to test out the Sleepwalker only channels for streaming and show off some of the progress, in more depth, to the biggest supporters. If you backed at the Sleepwalker tier or higher, you can join our [**Discord**](https://discord.com/invite/9NymgSJAVp) to take part in the stream.
+I’m going to show off some of some of this stuff in more detail in a Sleepwalker stream next week on **Thursday, September 1st** at **2pm** (**EDT**). While this isn’t quite playtesting, it gives me an opportunity to test out the Sleepwalker only channels for streaming and show off some of the progress, in more depth, to the biggest supporters. If you backed at the Sleepwalker tier or higher, you can join our [Discord](https://discord.com/invite/9NymgSJAVp) to take part in the stream.
 
 ![img](https://ksr-ugc.imgix.net/assets/038/399/133/96839a028a684c4bc6bbf4add7f2d1fa_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1661525595&gif-q=50&lossless=true&s=8ebf66608537a711cb2cbf1f87ad449b)
 
@@ -59,7 +59,7 @@ Another fun thing I’m working on is the UI for a banner that displays the zone
 
 ## Kickstarter Friends
 
-This month, the game I want to highlight isn’t quite ready yet for Kickstarter launch, but should be launching in the very near future. I’m super excited for [**Dono’s Tale**](https://www.kickstarter.com/projects/superitemstudios/donos-tale) and will be streaming a playthrough of the demo on **Saturday, September 3rd** at noon **12pm** (**EDT**) on [**Twitch**](https://www.twitch.tv/diesoftgames). In the meantime, you should follow their [**Kickstarter**](https://www.kickstarter.com/projects/superitemstudios/donos-tale) to be notified as soon as it launches, or check out their [**Twitter**](https://twitter.com/DonosTale).
+This month, the game I want to highlight isn’t quite ready yet for Kickstarter launch, but should be launching in the very near future. I’m super excited for [Dono’s Tale](https://www.kickstarter.com/projects/superitemstudios/donos-tale) and will be streaming a playthrough of the demo on **Saturday, September 3rd** at noon **12pm** (**EDT**) on [Twitch](https://www.twitch.tv/diesoftgames). In the meantime, you should follow their [Kickstarter](https://www.kickstarter.com/projects/superitemstudios/donos-tale) to be notified as soon as it launches, or check out their [Twitter](https://twitter.com/DonosTale).
 
 ![img](https://ksr-ugc.imgix.net/assets/038/399/163/a04548bec926bc5902d0dcd69da28d08_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1661525794&gif-q=50&lossless=true&s=2cfe4155dfe8d0be59704d37e53e82af)
 
@@ -69,12 +69,12 @@ Relive the glory days of the 16 and 32-bit era in Dono's Tale. A super cute and 
 
 ## That’s all for now
 
-That’ll do it for this month’s update. I really appreciate that you made it all the way down here. As always, please leave comments to help give feedback about the update. What did you like about it, what else would you like to hear about, etc. And if you’d like to interact more directly, please hop into our [**Discord** ](https://discord.com/invite/9NymgSJAVp)and say hello!
+That’ll do it for this month’s update. I really appreciate that you made it all the way down here. As always, please leave comments to help give feedback about the update. What did you like about it, what else would you like to hear about, etc. And if you’d like to interact more directly, please hop into our [Discord ](https://discord.com/invite/9NymgSJAVp)and say hello!
 
 And I’ll close out with a recap of upcoming streams:
 
--  *Thursday, September 1st at 2pm (EDT)*: Sleepwalker-only Stream in [**Discord**](https://discord.com/invite/9NymgSJAVp) showing off NemoMaker in-depth
--  *Saturday, September 3rd at noon 12pm (EDT)*: Public [**Twitch**](https://www.twitch.tv/diesoftgames) stream playthrough of the [**Dono’s Tale**](https://www.kickstarter.com/projects/superitemstudios/donos-tale) demo.
+-  *Thursday, September 1st at 2pm (EDT)*: Sleepwalker-only Stream in [Discord](https://discord.com/invite/9NymgSJAVp) showing off NemoMaker in-depth
+-  *Saturday, September 3rd at noon 12pm (EDT)*: Public [Twitch](https://www.twitch.tv/diesoftgames) stream playthrough of the [Dono’s Tale](https://www.kickstarter.com/projects/superitemstudios/donos-tale) demo.
 
 That’s all from me. Thank you, Sleepyheads ❤️ and see you in the next one! 😁
 
