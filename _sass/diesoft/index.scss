@@ -26,6 +26,15 @@ a {
     text-decoration: underline;
 }
 
+// So that we don't push bullet points into margin
+ul {
+    padding-left: 16px;
+}
+
+span.date {
+    color: $diesoft-gray;
+}
+
 a.cta {
     align-self: center;
     background-color: $diesoft-hotpink;
@@ -39,6 +48,50 @@ a.cta {
 
     &:hover {
         background-color: $diesoft-hotpink / 1.25;
+    }
+}
+
+nav {
+    @include font-baloo-thambi;
+    background-color: $diesoft-black;
+    color: $diesoft-white;
+    border-top: 1px solid #555;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    ul {
+        align-items: center;
+        padding-left: 0;
+        list-style-type: none;
+        font-size: 1.5em;
+        margin-left: 0;
+        margin-right: auto;
+        vertical-align: middle;
+    
+        li {
+            display: inline-block;
+            align-self: center;
+    
+            & + li:before {
+                font-size: .8em;
+                padding-left: .5em;
+                padding-right: .5em;
+                content: "|";
+                opacity: .5;
+            }
+        }
+    
+        a {
+            display: inline-block;
+            align-self: center;
+            text-decoration: none;
+            color: $diesoft-white;
+
+            &:hover {
+                text-decoration: none;
+                color: $diesoft-yellow;
+            }
+        }
     }
 }
 
@@ -114,6 +167,28 @@ footer.diesoft {
 
     .markdown-body {
         @include font-montserrat;
+
+        h2 {
+            margin-top: 3em;
+        }
+
+        p:has(img) {
+            text-align: center;
+            color: $diesoft-gray;
+            font-size: .8em;
+            font-style: italic;
+            font-weight: normal;
+            margin-bottom: 3em;
+        }
+
+        img {
+            margin-top: 3em;
+            margin-bottom: 3em;
+
+            &:not(:has(+ em)) {
+                margin-bottom: .5em;
+            }
+        }
     }
 }
 
@@ -136,17 +211,6 @@ ul.social {
         align-self: center;
         color: $diesoft-white;
         text-decoration: none;
-    }
-}
-
-.devlog {
-    article {
-        display: block;
-        border: 1px solid #eee;
-        border-radius: .25em;
-        padding: 1em 2em;
-        margin-top: .5em;
-        margin-bottom: .5em;
     }
 }
 

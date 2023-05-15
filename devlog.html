@@ -1,12 +1,15 @@
 ---
 layout: diesoft
+title: DIE SOFT Updates
+description: Developer updates from DIE SOFT as we work on "Little Nemo and the Guardians of Slumberland"
+image: /assets/images/little-nemo/trailer-thumbnail.png
 ---
-<div class="devlog container-lg px-3 my-5">
-    <h1>Devlog Updates</h1>
-    {% for post in site.posts %}
-    <article>
-        <span>{{ post.date | date: "%B %-d, %Y"  }}:</span>
-        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-    </article>
-    {% endfor %}
+<div class="container-md px-3 my-5">
+    <ul>
+        {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a> <span class="date">[ {{ post.date | date: "%-d %B %Y" }} ]</span>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
