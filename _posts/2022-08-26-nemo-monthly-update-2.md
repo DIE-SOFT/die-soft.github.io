@@ -11,7 +11,7 @@ But before I get into what I’ve been working on, just a reminder that pre-orde
 
 This past month I’ve been continuing to work on the authoring tooling (this is a "game" I use to build and test the world of Slumberland, I usually just refer to it as *NemoMaker*). It just needs a bit more work before it’s in a place where I can use it to build the early parts of the game for a Sleepwalker test build. If you didn’t read the [**previous update**](https://www.kickstarter.com/projects/diesoft/little-nemo/posts/3569416), check it out as I go into some details about why I’m building my own custom tooling for *Little Nemo*.
 
-# This Month’s Progress Breakdown
+## This Month’s Progress Breakdown
 
 The *chunk* (screen-sized pieces of the game world) *edges* (where two chunks meet) can now be adjusted so that they can be open, closed, or secret. Previously I was setting up all these edge chunks manually (dragging around edge colliders to be in just the right spot was pretty annoying), but now in NemoMaker, they will automatically appear at all edges around a room and I can edit them where they touch another room. Whether the chunk edge is open or closed will also affect which chunks are loaded in around the player. A chunk edge being closed effectively means you can’t get through there, so we do some simple path-finding to only load in nearby chunks which the player can actually reach. And a secret chunk edge is similar to open, but the camera won't pass through until the player does, to help disguise that there is something on the other side.
 
@@ -37,7 +37,7 @@ And a fun detail you can see here is the footstep effect changes when walking th
 
 We also have some amazing new sound effects for the menus now, courtesy of Jonathan Baken, who is handling all of the sound effects for the game. Check them out in this [quick video showcase](https://www.youtube.com/watch?v=Jj4s-uDHQAI).
 
-# Sleepwalker Stream!
+## Sleepwalker Stream!
 
 I’m going to show off some of some of this stuff in more detail in a Sleepwalker stream next week on **Thursday, September 1st** at **2pm** (**EDT**). While this isn’t quite playtesting, it gives me an opportunity to test out the Sleepwalker only channels for streaming and show off some of the progress, in more depth, to the biggest supporters. If you backed at the Sleepwalker tier or higher, you can join our [**Discord**](https://discord.com/invite/9NymgSJAVp) to take part in the stream.
 
@@ -45,7 +45,7 @@ I’m going to show off some of some of this stuff in more detail in a Sleepwalk
 
 
 
-# What am I working on next month?
+## What am I working on next month?
 
 NemoMaker is just about in a good enough state for me to build the Sleepwalker early demo build, but there are a few things I need to wrap up first. The UI needs a bit of work so that I can add lots more swatches (you can see it’s a bit bare bones for now). I’ll also need a property inspector panel as some items that can be placed will have options that can’t be expressed simply by its position and bounds in the world.
 
@@ -57,7 +57,7 @@ Another fun thing I’m working on is the UI for a banner that displays the zone
 
 ![img](https://ksr-ugc.imgix.net/assets/038/399/153/ea959b75d8ff84255b69a4e63c424363_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1661525719&gif-q=50&lossless=true&s=7cc3529b0eb099a635b563716591bd79)
 
-# Kickstarter Friends
+## Kickstarter Friends
 
 This month, the game I want to highlight isn’t quite ready yet for Kickstarter launch, but should be launching in the very near future. I’m super excited for [**Dono’s Tale**](https://www.kickstarter.com/projects/superitemstudios/donos-tale) and will be streaming a playthrough of the demo on **Saturday, September 3rd** at noon **12pm** (**EDT**) on [**Twitch**](https://www.twitch.tv/diesoftgames). In the meantime, you should follow their [**Kickstarter**](https://www.kickstarter.com/projects/superitemstudios/donos-tale) to be notified as soon as it launches, or check out their [**Twitter**](https://twitter.com/DonosTale).
 
@@ -67,7 +67,7 @@ This month, the game I want to highlight isn’t quite ready yet for Kickstarter
 
 Relive the glory days of the 16 and 32-bit era in Dono's Tale. A super cute and colorful platformer about a hungry little dragon! Jump, dash, climb, and shoot your way through detailed and colorful worlds in order to get back your precious fruit!
 
-# That’s all for now
+## That’s all for now
 
 That’ll do it for this month’s update. I really appreciate that you made it all the way down here. As always, please leave comments to help give feedback about the update. What did you like about it, what else would you like to hear about, etc. And if you’d like to interact more directly, please hop into our [**Discord** ](https://discord.com/invite/9NymgSJAVp)and say hello!
 
