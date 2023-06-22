@@ -47,7 +47,7 @@ a.cta {
     @include font-baloo-thambi;
 
     &:hover {
-        background-color: $diesoft-hotpink / 1.25;
+        background-color: darken($diesoft-hotpink, 15%);
     }
 }
 
