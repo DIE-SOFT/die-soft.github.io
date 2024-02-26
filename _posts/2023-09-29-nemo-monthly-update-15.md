@@ -86,19 +86,13 @@ Expect to see an update showing off the pet constellations observatory soon as w
 
 
 
-
-
 # New Domain Content 🆕
 
 This month I finished up some work I’m not willing to share yet, because it’s very secret end-of-game content (that particular domain I have no plans to share ahead of release because I'm excited for you all to encounter it for the first time yourselves in-game), BUT I also got started on the environment art, tilesets, and gimmicks for the spooky**🎃Haunted Hollow🎃** domain. So if you don’t mind spoilers, read on…
 
 
 
-
-
 # Spoilers Abound ❗🙈❗
-
-
 
 
 
