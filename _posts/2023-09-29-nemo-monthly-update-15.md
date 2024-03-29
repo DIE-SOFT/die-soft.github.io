@@ -10,7 +10,7 @@ Welcome back, Sleepyheads! With September coming to a close, it’s time for ano
 
 
 
-# Unity’s Recent Terms of Service Upheaval
+## Unity’s Recent Terms of Service Upheaval
 
 It became clear this month, after a recent announcement about licensing fee changes, that Unity has been stealthily changing their Terms of Service so that they could retroactively introduce new fees without giving developers a chance to opt out of them. This has rightfully shaken the trust of the Unity developer community at large, and possibly raised the concern among some of you that I may need to move *Little Nemo* away from Unity. So I’ll first address that by saying:
 
@@ -26,7 +26,7 @@ If you have any other questions about this news, or if you’re also an indie de
 
 
 
-# A Quick Aside: Ergonomics & Productivity
+## A Quick Aside: Ergonomics & Productivity
 
 Before I get to the new *Little Nemo* content I’ve been working on, I wanted to talk about some mundane behind-the-scenes stuff for a bit first (I've put this section up front because most of the content updates are spoilers, so having this up front just helps spoiler-free readers). If you just wanna see what’s new for the game, you can safely jump ahead.
 
@@ -54,7 +54,7 @@ I’ve always been a fan of mechanical keyboards with number pads, but I definit
 - The curved keywell design for comfort. I worked with someone that used a Kinesis Advantage previously and was always really interested in that design because as soon as you put your hands on the home rows you feel how much nicer it is to have the keys consider the different lengths of your fingers.
 - Programmable with a focus on thumb-cluster keys and maintaining the hands in home row position. I no longer need a numpad because I can use my left thumb to activate a layer which puts the numpad keys under my right hand. Essentially I bring the numpad to my hand instead of vice versa. I can then do the same for a custom symbols layer so I can get characters that are often used in programming without having to do so much reaching (in the photo above you can see my diagram for how I’ve arranged my symbols layer, I have that handy while I’m getting accustomed to it).
 - Column staggered rather than row staggered keys. This makes it much easier to find keys above and below the home rows, so typically any reaching your fingers are doing will only be up and down. Previously I used the “wrong” finger to type the z, x, and c keys because of this row staggering, so I’m having to relearn those characters, but expect my typing to get faster and more comfortable.
-   
+  
 
 ![img](https://ksr-ugc.imgix.net/assets/042/494/267/04ba5a133d19bb67bf98705b85e10f7a_original.png?ixlib=rb-4.1.0&w=700&fit=max&v=1695995781&gif-q=50&lossless=true&s=fcc77d72333222efc7eddef2a13cf426)Did you get that hot beverage I mentioned earlier? I warned you this was gonna be a long one! 😁
 
@@ -72,7 +72,7 @@ So while this discussion was great typing practice on my new keyboard as I learn
 
 
 
-# Back to 'Little Nemo' Updates! 🛌 
+## Back to 'Little Nemo' Updates! 🛌 
 
 Before I get to spoilers, I want to share the backer reward I worked on this month: the **🐈 Cat Customization**. Once you’ve selected a cat to replace Leo with, that setting will be retained, even displaying the cat you’ve chosen when the game first starts up. Please note: I haven't implemented all the cats yet, so if you are a *Cat Guardian Backer* and don't see your cat in this video, don't worry!
 
@@ -86,13 +86,13 @@ Expect to see an update showing off the pet constellations observatory soon as w
 
 
 
-# New Domain Content 🆕
+## New Domain Content 🆕
 
 This month I finished up some work I’m not willing to share yet, because it’s very secret end-of-game content (that particular domain I have no plans to share ahead of release because I'm excited for you all to encounter it for the first time yourselves in-game), BUT I also got started on the environment art, tilesets, and gimmicks for the spooky**🎃Haunted Hollow🎃** domain. So if you don’t mind spoilers, read on…
 
 
 
-# Spoilers Abound ❗🙈❗
+## Spoilers Abound ❗🙈❗
 
 
 
@@ -130,7 +130,7 @@ The pumpkin patches will regrow a pumpkin whenever the pumpkin you plucked from 
 
 
 
-# Other Kickstarters 💚
+## Other Kickstarters 💚
 
 That's it for *Nemo* updates, but of course I wanna give a shout out to a few other Kickstarters that are live right now which you should go check out. They’re from a variety of genres, but each looks amazing and two of them are hand-drawn.
 
@@ -160,7 +160,7 @@ If you’re looking for a chill and cozy game, this looks like a great one to ba
 
 
 
-# Wrapping Up 🎀
+## Wrapping Up 🎀
 
 Well, that'll do it for this month. I still don't have any news in terms of a release date announcement, but that probably won’t be something I’m thinking about sharing for at least a few more months. 🤐
 
