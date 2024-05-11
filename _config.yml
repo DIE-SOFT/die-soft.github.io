@@ -1,6 +1,11 @@
+# OG Tags and Related
 title: "DIE SOFT"
-author: "DIE SOFT, LLC"
 description: "A tiny indie game studio working on 'Little Nemo and the Guardians of Slumberland'"
+image: "/assets/images/diesoft.logomark.png"
+type: "website"
+twitter:
+  username: diesoftgames
+  card: summary
 
 email: "diesoftgames@gmail.com"
 twitter_username: "diesoftgames"

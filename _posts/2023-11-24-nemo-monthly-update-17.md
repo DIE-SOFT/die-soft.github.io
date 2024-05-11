@@ -1,6 +1,9 @@
 ---
 
 title: Monthly Update 17
+author: David Mauro
+description: This month we're talking about world wrap, our animated intro, and some more spoilers.
+image: "https://i.kickstarter.com/assets/043/140/051/d884dcff1f80cb5081ef8cee0b375a35_original.png?fit=scale-down&origin=ugc&width=700&sig=AUKVjpxtRm9vLqyXdvTe7jCha26%2BpsHjmT%2FxGxV59g0%3D"
 
 ---
 
