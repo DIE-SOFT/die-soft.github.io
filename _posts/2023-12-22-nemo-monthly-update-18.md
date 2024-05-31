@@ -1,7 +1,8 @@
 ---
 
 title: Monthly Update 18
-
+description: A look at some Mushroom Marsh sketches, a new boss, and changes to the candy economy.
+image: /assets/images/devlog/2023-12-22-preview.png
 ---
 
 # Monthly Update 18 
