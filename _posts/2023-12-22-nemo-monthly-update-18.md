@@ -77,7 +77,7 @@ I look forward to seeing how these tweaks feel for players when I make a new bui
 
 ## Kickstarter Friends 💚
 
-I know I mentioned this Kickstarter last month, but it wasn’t launched yet, and now it only has 6 days left and is very close to reaching its goal: [**Dewborne Dawn**](https://www.kickstarter.com/projects/dewbornedawn/dewborne-dawn-an-action-adventure-metroidvania) looks very promising, so go check out their Kickstarter campaign and consider helping them meet their funding goal in the final few days!
+I know I mentioned this Kickstarter last month, but it wasn’t launched yet, and now it only has 6 days left and is very close to reaching its goal: [Dewborne Dawn](https://www.kickstarter.com/projects/dewbornedawn/dewborne-dawn-an-action-adventure-metroidvania) looks very promising, so go check out their Kickstarter campaign and consider helping them meet their funding goal in the final few days!
 
 ![img](https://i.kickstarter.com/assets/043/450/855/91c20f9841ac48906943dcb4cc2030b5_original.png?fit=scale-down&origin=ugc&width=700&sig=fn2UzzjBJDvhGCkzVE5m1eSWnGEF%2FN5XtK7%2BUgiwDZ0%3D)Check out Dewborne Dawn's Kickstarter campaign ending in 6 days
 
