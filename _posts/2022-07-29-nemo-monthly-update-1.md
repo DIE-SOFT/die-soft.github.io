@@ -9,7 +9,7 @@ I was still doing a lot of Kickstarter related stuff this month though. We got t
 
 In terms of actual development updates though, I have had about two full weeks this month to dive back into things. It’s nice getting to work on the game after spending so much time completely focused on just the Kickstarter. Most of my focus at the moment is working on my tooling. While the demo I shared with content creators was built using Unity’s scenes to author the content, the end goal is to use my own “Nemo Maker” that I’ve been building alongside the game content.
 
-![img](https://ksr-ugc.imgix.net/assets/038/111/563/246e5453a623bda1a86c326283bd0d3c_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1659104191&gif-q=50&q=92&s=3c79b637aa6b92f68e4989764130fccd)
+![img](https://i.kickstarter.com/assets/038/111/563/246e5453a623bda1a86c326283bd0d3c_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=WHqaEZYbylk7jSGatTQYRh41b6C66PmS4alzsrgnH0w%3D)
 
 There are a few reasons I’ve decided to go this route even though it’s quite a bit more work:
 
@@ -24,13 +24,13 @@ I’ve already put lots of work into this tooling system, but it still needs a b
 
 Here’s some of what I’ve been working on lately: allowing for each room to have its own thematic styling. This will be important for creating distinct “zones” in the game. Since everything loads in around the player, we need to be able to have the tiles and backgrounds load in on-demand. Here you can see this working, albeit to an absurd degree where you can see the hard seams between rooms. These kinds of hard seams won’t be visible in the final game, as we’ll have some assets to “disguise” the transitions between zones.
 
-![img](https://ksr-ugc.imgix.net/assets/038/111/574/98a75bb1970efb9153c8143f11c895cb_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1659104245&gif-q=50&q=92&s=3249146c1e144efb7cb2c253a1f35f70)
+![img](https://i.kickstarter.com/assets/038/111/574/98a75bb1970efb9153c8143f11c895cb_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=j%2BLgWH8%2FbQErBVTRTDwodYGODXn0hKWHqyk4p7vpEqE%3D)
 
 I’ve also been working on the UI which allows me to select the “edge type” between rooms. That doesn’t show off in GIFs very well, but it will be critical for building out the structure of the world by allowing me to define how the edges of rooms behave (eg. does it block the camera and player, or can we freely pass through, or is it a secret wall?)
 
 Once these pieces get just a bit further along I’d like to do a quick streaming preview of this stuff for the Sleepwalkers. It’s not quite a Playtesting Livestream, but kind of an early preview of that. So if you backed at the Sleepwalker level or higher and haven’t joined the Discord server yet, now is a great time to do so, because that is where the Sleepwalker Playtesting Livestreams will be broadcast.
 
-![img](https://ksr-ugc.imgix.net/assets/038/111/577/96839a028a684c4bc6bbf4add7f2d1fa_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1659104272&gif-q=50&lossless=true&s=3cd16b4b43a204e9f2d45faa5ef30350)
+![img](https://i.kickstarter.com/assets/038/111/577/96839a028a684c4bc6bbf4add7f2d1fa_original.png?fit=scale-down&origin=ugc&width=700&sig=lMPKSap3Yjn3NQ4m6lgLJqKfdnHUpgrYC%2BilOk7QPLs%3D)
 
 
 
@@ -46,7 +46,7 @@ I've been continuing to do somewhat impromptu streams both on Twitch and in the 
 
 I’ve found another amazing looking game that’s on Kickstarter right now, which I think you’re all gonna enjoy. I’m really struck by just how pretty it is, but it also looks like it’s just gonna be a really fun platformer:
 
-![img](https://ksr-ugc.imgix.net/assets/038/111/590/4c605ce0166f9fb283475fb62fc5529a_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1659104347&gif-q=50&q=92&s=de5499d6dbe50ed714bd3e5aa4720217)
+![img](https://i.kickstarter.com/assets/038/111/590/4c605ce0166f9fb283475fb62fc5529a_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=z5qV26ugKz9RVgliJmxncJ2kUF5EJP7%2ByI9jTZKWXUY%3D)
 
 
 

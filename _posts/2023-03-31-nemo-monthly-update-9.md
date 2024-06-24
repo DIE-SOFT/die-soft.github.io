@@ -13,7 +13,7 @@ Also just want to give a fair warning that I go into a lot of technical details 
 
 Some exciting news for those of you that don’t have a Nintendo Switch, but are looking forward to playing *Little Nemo* on a handheld: I picked up a Steam Deck this month to help ensure the game will be able to launch with verified status.
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/066/b73a096b72300027987874b1d0241f6f_original.jpg?ixlib=rb-4.1.0&w=700&fit=max&v=1680296819&gif-q=50&q=92&s=c1077372df69a93d88ec0dc7345a7766)A shot of a Little Nemo development build running on the Steam Deck
+![img](https://i.kickstarter.com/assets/040/445/066/b73a096b72300027987874b1d0241f6f_original.jpg?fit=scale-down&origin=ugc&q=92&width=700&sig=kotbzffTRtSuNej88kwe3NcMHjt5mbUxtMatcOgkqjs%3D)A shot of a Little Nemo development build running on the Steam Deck
 
 Right out of the box, the game runs really well and hits the 60fps target simply using the Steam Deck’s built-in support for Windows games using Proton (uncapping the framerate sees it hitting about 90fps on average). If you have the *💾 Early Builds Access* reward and have tried this yourself, you may have noticed that the game drops some frames any time content loads in around the player. This is something that isn’t impactful enough to be noticed easily on a powerful enough Desktop PC, but on a device like this it becomes much more noticeable (personally I’m quite sensitive to these kinds of frame dips, although you might not have even noticed it yourself). Though the systems responsible for this were a known target for performance improvements, it’s helpful to run on a device like this to get a sense of how urgent that need is.
 
@@ -27,7 +27,7 @@ The first area in question is my code for interfacing between the legacy Unity c
 
 The solution here will be to make my Hybrid conversion process a bit more streamlined by collecting all of the data Components each Proxy wishes to add to the Entity, and then create or find an archetype based on those desired Components and apply them all at once. Although it sounds fairly straight-forward, it will be a decent chunk of work (hence why I haven’t already done it) because it will involve a lot of performance testing to make sure it’s as beneficial as it can be.
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/105/f9dc7ded3af54c3395c7281bff97391c_original.jpg?ixlib=rb-4.1.0&w=700&fit=max&v=1680297178&gif-q=50&q=92&s=ef1573cac75ae745e1b4e7cbef627091)Look, I don't have any good/relevant screenshots to show here as I go into the technical weeds, so have a promotional ECS image from Unity.com 😅
+![img](https://i.kickstarter.com/assets/040/445/105/f9dc7ded3af54c3395c7281bff97391c_original.jpg?fit=scale-down&origin=ugc&q=92&width=700&sig=IZwppgA7Yfd9mSTmV0Y3lt%2B9qbijwR5tu76MZV7JRBA%3D)Look, I don't have any good/relevant screenshots to show here as I go into the technical weeds, so have a promotional ECS image from Unity.com 😅
 
 The second area of improvement surrounds the loading in of the Tiles that are in each Chunk of the game world. I make extensive use of Unity’s Tilemaps and some extras they offer on GitHub, specifically the RuleTiles. These are Tiles that can change which sprite is used for a Tile based on its neighboring Tiles. Currently, that logic is run on the main thread and is not Burstable (a performance optimization that is great for this sort of work). So the fix here will be to rewrite the RuleTile’s logic for determining which sprite to use in a Burstable manner, and also to find a way to pre-emptively collect that data *before* we need to render the Tile, so that we can run that logic on a background thread and only begin writing in those Tiles once we know the data is ready.
 
@@ -65,7 +65,7 @@ As we get closer to the game being complete and I’m able to focus on targeting
 
 Okay, that’s enough about the Steam Deck. Some other non-spoiler work I did this month that I can share is a visual revamp of the Oblivion.
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/158/7d847f21c13cc45c7c8e8d7c21ad2ae8_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1680297673&gif-q=50&q=92&s=3a3d74a2268d63d22ed00b52f579a5b7)
+![img](https://i.kickstarter.com/assets/040/445/158/7d847f21c13cc45c7c8e8d7c21ad2ae8_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=4U2374taBUmclqAW1VB2e42W8j0haajwjdolFgTSa1s%3D)
 
 The sprites that I was using for the Oblivion tiles were initially intended to be a placeholder, but I thought they had been working decently enough to not be a priority. But more recently I had realized from talking to others, that *what* exactly the Oblivion *is* wasn’t coming through correctly. It is supposed to be a watery substance, and the rectilinear nature of Tilemaps made that difficult to convey easily.
 
@@ -73,7 +73,7 @@ This new set of tile sprites makes extensive use of the RuleTile logic to round 
 
 Ultimately I hope that this has the same visual appeal that it did before, while looking a little more polished and better conveying some of the material properties it was always intended to.
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/189/2153a93b8f5e5e0b241ef67414dd5cd1_original.png?ixlib=rb-4.1.0&w=700&fit=max&v=1680297884&gif-q=50&lossless=true&s=88a33b1f8b324ee3899a6940011dec19)This is a side-by-side look at the textures used for the tiles and the parallax layers of the Oblivion respectively.
+![img](https://i.kickstarter.com/assets/040/445/189/2153a93b8f5e5e0b241ef67414dd5cd1_original.png?fit=scale-down&origin=ugc&width=700&sig=ikHi3vK3rVutE7fr5XVsWBXlH46R5DgvqsMGajMERjM%3D)This is a side-by-side look at the textures used for the tiles and the parallax layers of the Oblivion respectively.
 
 
 
@@ -83,7 +83,7 @@ Everything from here on out is a bit spoilery, so read at your own discretion.
 
 Last month I showed off a bit of the Cape toy, which gives Nemo the ability to slow fall and air dodge, but I didn’t have the animations ready yet. So here’s a quick look at the cape in action:
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/194/8cb14995bea816e0e259f1dcbb4013aa_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1680297948&gif-q=50&q=92&s=3916971f9ad2b2b5c401ae442c2fdbd6)
+![img](https://i.kickstarter.com/assets/040/445/194/8cb14995bea816e0e259f1dcbb4013aa_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=loj2ZGXQxKssHktlKm5PVunOCXf1y7RM7W%2Bd25l2KYo%3D)
 
 Here you can see Nemo is able to reach platforms that would normally be inaccessible both through the slow fall ability and using the air dodge to reach new heights (as a double jump of sorts). You can also see Nemo passing safely through a Burrchin using the temporary invulnerability granted during the air dodge.
 
@@ -93,7 +93,7 @@ Here you can see Nemo is able to reach platforms that would normally be inaccess
 
 This month I also worked with one of our most generous backers who had the *🛏️ Design Pajamas* special reward tier. Together we came up with the Shortcake PJs, which provide Nemo with the *Sweets Aplenty* buff causing more candy to spawn when you break open Moons.
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/209/c6999e30a0f4569afacd79751975c1bb_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1680298039&gif-q=50&q=92&s=eca829ebbb32990048983a9225979806)
+![img](https://i.kickstarter.com/assets/040/445/209/c6999e30a0f4569afacd79751975c1bb_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=t9NX1x%2F3WnNAFImuC8RnFSML9gGDHhK8OJIT27jllqs%3D)
 
 Nemo wearing the Shortcake PJs
 
@@ -129,19 +129,19 @@ While each zone will have wildly different backgrounds, tilesets, soundtracks, e
 
 Before you go, I just want to remind you that Kickstarter is a great way to help indie games get made. There are lots of campaigns running right now which could use your help, and here are a few 2D platforming games that I think you should take a peek at:
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/260/2ccc3a4333ee585d74acf615e7b71e86_original.jpg?ixlib=rb-4.1.0&w=700&fit=max&v=1680298431&gif-q=50&q=92&s=9f270cb82bfd0ce67170e6ecaf13c186)
+![img](https://i.kickstarter.com/assets/040/445/260/2ccc3a4333ee585d74acf615e7b71e86_original.jpg?fit=scale-down&origin=ugc&q=92&width=700&sig=yuOmBnsW9ARx1jfZP4J%2F%2BBZ3hwoDg8alZWBrVihFzyk%3D)
 
 
 
 [Windswept](https://www.kickstarter.com/projects/weatherfell/windswept) looks like a really cute and fun traditional platformer very clearly inspired by one of my favs: Donkey Kong Country 2.
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/264/3bdb3624e71b2f8765e7c445e8c7e7b0_original.jpg?ixlib=rb-4.1.0&w=700&fit=max&v=1680298454&gif-q=50&q=92&s=3bb0dc770d95224f5454d29d3e59fc88)
+![img](https://i.kickstarter.com/assets/040/445/264/3bdb3624e71b2f8765e7c445e8c7e7b0_original.jpg?fit=scale-down&origin=ugc&q=92&width=700&sig=MGMaH%2BF6yU00KV1KUipugtb%2FClzbJD8IFSPfVU6%2BCWY%3D)
 
 
 
 [Telmari](https://www.kickstarter.com/projects/telmari/telmari) is a game I’ve been following on Twitter because the art style immediately caught my eye. This looks like another more traditional level-based platformer, with a fun new central mechanic.
 
-![img](https://ksr-ugc.imgix.net/assets/040/445/268/0edcf7896e0e9a8e542a2ce384b1ed54_original.jpg?ixlib=rb-4.1.0&w=700&fit=max&v=1680298478&gif-q=50&q=92&s=c92e1497210edaf050fddfa325903506)
+![img](https://i.kickstarter.com/assets/040/445/268/0edcf7896e0e9a8e542a2ce384b1ed54_original.jpg?fit=scale-down&origin=ugc&q=92&width=700&sig=GE8xe8K5J20iXSFsSGpDkhA7hkGRjUmi1FCNoOdI4jw%3D)
 
 
 

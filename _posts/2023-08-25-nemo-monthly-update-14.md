@@ -14,7 +14,7 @@ August is nearly over as we reach the final Friday of the month, and although th
 
 ## Unity Version Update
 
-![img](https://ksr-ugc.imgix.net/assets/042/069/022/9cee4915946a4af02bcc0c11f9b5a3dd_original.png?ixlib=rb-4.1.0&w=700&fit=max&v=1692977563&gif-q=50&lossless=true&s=f24438c9d0d4342e78285a600773a656)
+![img](https://i.kickstarter.com/assets/042/069/022/9cee4915946a4af02bcc0c11f9b5a3dd_original.png?fit=scale-down&origin=ugc&width=700&sig=9Tai3Zfw%2BYbnPNkenQ1MAZnxQro%2B3tNfIeX446oCF%2BQ%3D)
 
 This month I upgraded the *Little Nemo* project from Unity 2020.3 (LTS) to 2022.3 (LTS). Wow! 🎉 … what does that mean? Well here’s a quick breakdown of how Unity’s annual release cycle works:
 
@@ -44,11 +44,11 @@ We’ve also got some amazing tracks in the work from Peter Berkman, but they’
 
 While showing off the background art for the Palace dream domain, it wasn’t quite ready, so I thought I’d show how it’s looking with the more finalized assets in the background.
 
-![img](https://ksr-ugc.imgix.net/assets/042/069/030/1641e750de84146c79f12c4e56dfd60f_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1692977613&gif-q=50&q=92&s=a85682f7171ab24571723ec7b5be05f7)Revisiting the penciled-in Palace outdoor background assets from last month, now with finalized art assets with a depth of field blur
+![img](https://i.kickstarter.com/assets/042/069/030/1641e750de84146c79f12c4e56dfd60f_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=ApTQRMNWeyWi%2F7dfMulPMzc2gx00ZvqMIzSjdlA29KA%3D)Revisiting the penciled-in Palace outdoor background assets from last month, now with finalized art assets with a depth of field blur
 
 I also got some more tilesets completed, so here’s a look at what the pass-thru, dangle, and alternate collision tiles look like, as well as some cleanup and polish for the main collision tiles (the red carpet is a bit nicer now and there are better wooden details within large solid tile areas).
 
-![img](https://ksr-ugc.imgix.net/assets/042/069/043/b46ca02823e4f950504a27bfa900c7a2_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1692977672&gif-q=50&q=92&s=8388b413d89265952ed71c3e3b3c706e)Finalized tilesets for the Palace domain
+![img](https://i.kickstarter.com/assets/042/069/043/b46ca02823e4f950504a27bfa900c7a2_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=XJ2DgqzdXbwKlNo698bgiKFYHEm0K2vXsymjWfGQ9q0%3D)Finalized tilesets for the Palace domain
 
 
 
@@ -56,17 +56,17 @@ I also got some more tilesets completed, so here’s a look at what the pass-thr
 
 Two months ago I shared the beginnings of my systems for handling fluid displacement for making some sprites reactive to player movement due to wind or moving through a liquid. I actually ran into a bit of a technical roadblock for a bit (ultimately I wasn’t able to use ShaderGraph for what I wanted and I had to write my shader manually) so I only just got back to it this month, but it’s all wrapped up now and I wanted to show off some of the ways this is used for fun effects.
 
-![img](https://ksr-ugc.imgix.net/assets/042/069/059/5254882174625cee74f68c22ade2b86a_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1692977752&gif-q=50&q=92&s=a0630c5e10fac74243c91dc16cd465ee)The gunk that comes out of the mushrooms here prevents you from running full speed or jumping more than one tile high.
+![img](https://i.kickstarter.com/assets/042/069/059/5254882174625cee74f68c22ade2b86a_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=cCVrx5%2BbV%2Fub%2Fcogqiml3tnbJ4bAYk1vzEvCZtL5Glk%3D)The gunk that comes out of the mushrooms here prevents you from running full speed or jumping more than one tile high.
 
 This is the gunk in the Mushroom Marsh which really forced my hand on finally developing this system. I knew it just wouldn’t work without some kind of fluid-like reaction to the player entering and moving through it. As with the Entities stuff I talked about above, there are some really interesting technical details for how this is implemented, so feel free to ask for more info about it! Also shout-out to [aarthificial's wind solution](https://github.com/aarthificial/pixelgraphics/tree/master) which I looked to for inspiration.
 
-![img](https://ksr-ugc.imgix.net/assets/042/069/065/77af4787a6b9ab4d154f0a9b2cd742d7_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1692977793&gif-q=50&q=92&s=13f69974ad39627e70d898bc63ff00df)The bushes can now gently rustle in the wind and react as things move past them.
+![img](https://i.kickstarter.com/assets/042/069/065/77af4787a6b9ab4d154f0a9b2cd742d7_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=Lo7X3Eu%2FcPesBAUQp8TSMkD6j3ZEUtdDz4qtPIGd3Gc%3D)The bushes can now gently rustle in the wind and react as things move past them.
 
 And here is a use case we already had: dynamic foliage. It’s nice to have this stuff react to the player and other motion because it just makes the simple act of moving through the world a tiny bit more interactive and fun. All these little details add up, so I did want to eventually get this back in here (I had an earlier system, but it wasn’t quite right and worked only for foliage).
 
 And finally, this is just a fun visual effect for a specific area of the game I won’t talk about. It's just a bit of interactive flavor that isn’t very critical, but will hopefully make the entire area it appears in come together that much better.
 
-![img](https://ksr-ugc.imgix.net/assets/042/069/071/aa822e3e9719edd2c8ecac2fdbd22e9a_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1692977853&gif-q=50&q=92&s=39d2f9256c7b6afbc363618e2b8186a9)This is just a bit of a surreal effect being shown without context to highlight some of the more surprising things we can do with this system.
+![img](https://i.kickstarter.com/assets/042/069/071/aa822e3e9719edd2c8ecac2fdbd22e9a_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=ssy2KDJOiBw5IktAcvWNDNKPGfMNF1wmL4a4dA3yLG8%3D)This is just a bit of a surreal effect being shown without context to highlight some of the more surprising things we can do with this system.
 
 
 

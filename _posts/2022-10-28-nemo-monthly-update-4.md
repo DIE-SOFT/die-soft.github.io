@@ -21,7 +21,7 @@ Some quick notes about this build: there’s almost no content in there right no
 
 So figuring out how to get squared away with builds on Steam without having a store presence ready yet for *Little Nemo* was one of the big tasks I was happy to wrap up this month. But of course there’s plenty more I finished up. And here’s what is inarguably one of the most critical, and most requested features that kept popping up from the Kickstarter private demo:
 
-![img](https://ksr-ugc.imgix.net/assets/039/060/406/8bbd1dbf9e0e0d3240205a3cb8416fa7_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1666965912&gif-q=50&q=92&s=735b293387db6bde22cb9bfb461705dd)
+![img](https://i.kickstarter.com/assets/039/060/406/8bbd1dbf9e0e0d3240205a3cb8416fa7_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=q60VJ1h8TQN%2BawpstxAnKkFrp3I8tFcRovhwgCBXv3c%3D)
 
 You can now pet the cat. 😻
 
@@ -29,11 +29,11 @@ The cat sound effects aren’t in there yet, but I’m happy with the animation 
 
 The Pajama and Little Buddy systems are now fully functional:
 
-![img](https://ksr-ugc.imgix.net/assets/039/060/415/7b972ddfa2b864826bdba1fc9b0712f9_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1666965969&gif-q=50&q=92&s=071975a6c8f444aed71ae9a1e96ffd42)Here's Nemo swapping out the currently equipped PJs and Little Buddy while in the bedroom
+![img](https://i.kickstarter.com/assets/039/060/415/7b972ddfa2b864826bdba1fc9b0712f9_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=uMR0qSU8h582a6XqH9VUKx9bW%2FRx34Lv8cQEcdx%2BTtg%3D)Here's Nemo swapping out the currently equipped PJs and Little Buddy while in the bedroom
 
 Right now there are only six PJs and two Little Buddies completed, but the UI and flow for acquiring new ones have been fleshed out. The Little Buddy system was a bit tricky to polish up because it required pathfinding, which can get fairly complex in a platformer environment. This is why you’ll often see familiars/buddies in games float around near the player, able to clip through walls. But I want the buddies to tag along and jump around with Nemo moving in a similar way. Here’s a peek at the pathfinding logic with some pathing gizmos turned on:
 
-![img](https://ksr-ugc.imgix.net/assets/039/060/427/8a77e2939c4cc33b9c73e854de54e166_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1666966016&gif-q=50&q=92&s=e5ea044d3d7c623ccb2e019ab1107673)Here the red line represents the path BOB is taking through the world to follow Nemo.
+![img](https://i.kickstarter.com/assets/039/060/427/8a77e2939c4cc33b9c73e854de54e166_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=Ym1x7w0enBwq%2BlLo4Hbefn1R6v4HzvVKz7JRf88IFVE%3D)Here the red line represents the path BOB is taking through the world to follow Nemo.
 
 I also polished up the dialogue UI a bit and added a lip-syncing feature. This is something I knew I kind of wanted, but just hadn’t had time to tackle just yet. Here you can see Flip’s mouth and eyes controlled by the dialogue as it is read. The sound effects have also been overhauled a bit, so I’ve uploaded this [as a video](https://www.youtube.com/watch?v=nd5Bjf7_eF8).
 

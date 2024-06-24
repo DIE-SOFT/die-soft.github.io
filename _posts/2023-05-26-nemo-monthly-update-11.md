@@ -12,7 +12,7 @@ Hello, Sleepyheads! 👋 We’ve got lots of announcements this month for those 
 
 **1.** *Little Nemo* is gonna be in the upcoming **Wholesome Direct**! 🎉
 
-![img](https://ksr-ugc.imgix.net/assets/041/090/819/4d0812f2831e803a624cd3d7cc981839_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1685125047&gif-q=50&q=92&s=5906b9757ae19151f7e081ac32e88dd5)
+![img](https://i.kickstarter.com/assets/041/090/819/4d0812f2831e803a624cd3d7cc981839_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=kbAKN73yZHmJGirkc9GilnqdB%2FmXaNrXucT8H%2BsCDrs%3D)
 
 
 
@@ -40,7 +40,7 @@ Okay, with those big announcements out of the way, let’s dig into what else I�
 
 In general, the intent with *Little Nemo* is to have minimal “cutscenes” and to convey story, characters, and lore primarily through dialogue interactions. That means the dialogue needs to get leveled up a bit from the fairly naive implementation that has been there up until now (I’m referring more to the backend as I’m happy with the dialogue UI’s visual presentation).
 
-![img](https://ksr-ugc.imgix.net/assets/041/090/891/16563d8e22f209e9f3d857f052cc0fdc_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1685125456&gif-q=50&q=92&s=dce0bf70447ed00bfc059598981bcfdb)
+![img](https://i.kickstarter.com/assets/041/090/891/16563d8e22f209e9f3d857f052cc0fdc_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=gQT1TscRBWEXoMQ9dfs78152hraSM%2BmMeTWmbZ2DUU4%3D)
 
 The existing dialogue UI mimics modern texting apps, has plenty of finely tuned animations, and allows for animated portraits on either side of the conversation.
 
@@ -66,7 +66,7 @@ Expect improvements to the existing conversations in the near future. Cid has be
 
 This might seem like a jump, but we’re still talking about the same topic of dialogue systems and UI. In *Little Nemo* you’ll be able to spend candy you’ve collected to purchase items (or other less concrete rewards) from NPCs. But there are no discrete “shops” in the world. This mostly comes down to the lack of consumable items or weapon upgrades (which are often the class of things you’ll purchase in video game shops). Instead, NPCs will typically only offer the opportunity to buy a singular item or perhaps offer to do something for you if you give them some candy. So it is a bit more of a bartering system, and it makes sense to simply work that into the flow of dialogue.
 
-![img](https://ksr-ugc.imgix.net/assets/041/090/936/cc7e5a9fd112cb60ab9598cb648d5366_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1685125742&gif-q=50&q=92&s=c5feb1ff69b652617b62d415ef1e79d9)
+![img](https://i.kickstarter.com/assets/041/090/936/cc7e5a9fd112cb60ab9598cb648d5366_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=FY0g9CWJOP%2BTT5o9rj7Tgbo1yxDfXADrMCLH%2BudjqnE%3D)
 
 A mocked up conversation example using the new choice selection & shopping UI.
 
@@ -88,11 +88,11 @@ Additionally, something I’ve noticed in the current build of the game is that 
 
 This is a somewhat small detail, but I think it will go a long way: there’s now an animation for the moon meter, and on Nemo, when you fill the meter. Players are often confused about the moon meter and what it does, for good reason: there weren’t any indications about what happened after filling it.
 
-![img](https://ksr-ugc.imgix.net/assets/041/090/966/d0c9f104230e7336713524d6fc8613f8_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1685125944&gif-q=50&q=92&s=e0a4dd5843af786d4194606d9a3af46f)
+![img](https://i.kickstarter.com/assets/041/090/966/d0c9f104230e7336713524d6fc8613f8_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=CVhfhrHdp4G2rsBi7z1EsbiX5um8P57oiuwoSedpWbk%3D)
 
 Now the meter has a small animation to go with filling up, and Nemo is surrounded by hearts and sparkles with some text letting you know that Nemo has been healed. This effect was probably a lot harder than you’re imagining. The faux-3D aspect of the hearts and sparkles around Nemo (they go behind and in-front of and then again behind Nemo’s sprite) requires some clever toggling of two separate particle systems rendering in different sorting layers, and the curved text required an asset from the Unity asset store. So I think I wound up spending the better part of a day just getting this one effect done (😣 much longer than I’d typically spend on a single effect) but I’m happy with the result.
 
-![img](https://ksr-ugc.imgix.net/assets/041/090/971/ab3b671aa300db37f019640cd19e531f_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1685125972&gif-q=50&q=92&s=544339fe73e026d6b411779a5fe8934e)
+![img](https://i.kickstarter.com/assets/041/090/971/ab3b671aa300db37f019640cd19e531f_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=4e%2BV7phpyz%2FqThdPl1zCealNK8lfxSLCcleLo%2FqofNY%3D)
 
 If you’ve been following development closely, you’ve probably heard me mention the idea of ranking up. I’m probably not going to implement that system until a bit later when I have most of the content of the game complete so that I can balance it appropriately, but the general idea is that filling the moon meter when you’re already at full health will rank you up, making the game more challenging with the possibility for more rewards. I will re-use this effect with some changes to the text and particles for a rank up effect, but for now it will only ever heal Nemo.
 

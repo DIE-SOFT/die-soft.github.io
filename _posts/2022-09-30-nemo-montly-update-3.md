@@ -13,7 +13,7 @@ I wrapped up the final major features I needed for NemoMaker to be properly usef
 
 So with that in a good place, I’ve also been working on some of the core features that I wasn’t able to have ready in time for the closed-demo for the Kickstarter campaign. In that demo, the map and status screens were semi-interactive placeholders. The map didn’t even show a map at all related to the demo area. There were also no Pajama or Little Buddy upgrades available, and the upgrade flow when you picked up a new toy left a lot to be desired. I’ve been addressing all of that and those features are all just about ready to get incorporated into an early Sleepwalker alpha build to share soon.
 
-![img](https://ksr-ugc.imgix.net/assets/038/758/043/d710971773f3176a5aec8fa87d24a95e_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1664554018&gif-q=50&q=92&s=dce29f8494662efe9245af44ea6ffc9c)A time-lapse of the map expanding as Nemo explores Slumberland
+![img](https://i.kickstarter.com/assets/038/758/043/d710971773f3176a5aec8fa87d24a95e_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=Dm9tg783NpYJxO9AbAyjMfRYpAhzl0XpSVHqqfMiDUg%3D)A time-lapse of the map expanding as Nemo explores Slumberland
 
 This is our first pass at the world map. It is dynamically built from the Atlas data (the Atlas simply being the world that is built in the *NemoMaker* tooling). It handles hiding secret walls until they’re discovered, displaying major items such as beds and where you found upgrades, and it tracks which rooms you've been to, and even which individual chunks of a room you’ve visited. And any open edges of the map are highlighted with “???” to help draw your attention to areas you likely should be heading to.
 
@@ -21,9 +21,7 @@ There’s still a bit more functionality to add in terms of displaying toy gates
 
 And here’s a look at the improved flow for picking up major upgrades (Toys, Pajamas, and Little Buddies now use this flow):
 
-![img](https://ksr-ugc.imgix.net/assets/038/758/063/06bd6a71d8d25e2ee93d67bd46085528_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1664554112&gif-q=50&q=92&s=de532435eaeb8fbbafe0cbe3d7d7a090)
-
-Here I’m using NemoMaker to show off what happens when Nemo collects a new toy upgrade.
+![img](https://i.kickstarter.com/assets/038/758/063/06bd6a71d8d25e2ee93d67bd46085528_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=Pcm5ifNktsWd2OhMLgEbJXAnjHjAtnssTVrYye%2B2f%2BY%3D)Here I’m using NemoMaker to show off what happens when Nemo collects a new toy upgrade.
 
 You may recognize that banner as the design I showed last month that I wanted to use for displaying the name of a zone you’re entering, and that’s because I finished up that work, and then decided this UI would be great for any kind of messaging like this. I also polished up the effect when you get the toy, and then critically *it now takes you directly to the status screen to give you the details about the toy you just acquired*. This was the feature I wanted in the earlier demo but didn’t have time for. So now when collecting a new upgrade, you'll see a simple explanation for how it works/what it does, and then that may be coupled a minor challenge that forces you to learn to use it (a la how *Metroid* forces you to immediately use the Morph ball as soon as you acquire it).
 

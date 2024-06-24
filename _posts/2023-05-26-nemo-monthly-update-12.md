@@ -16,7 +16,7 @@ Wow, can you believe it?! The Kickstarter was wrapping up one year ago and we we
 
 One of the first things I shared on Twitter was a sketch for [Nemo’s run animation](https://twitter.com/diesoftgames/status/1090696554384625664). I wasn’t yet ready to share that this was going to be a Little Nemo game, so although you might be able to tell the character is wearing PJs, there is very little detail. This was mostly for finding motion I liked.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/717/cbf8c7e0ef0c5d976f51d5d5784cfcf2_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688145524&gif-q=50&q=92&s=77262fd78ce886f24850490d22a83b07)First pass at Nemo’s run animation. There is little detail and no secondary animation such as the bouncing hair and PJ hood.
+![img](https://i.kickstarter.com/assets/041/469/717/cbf8c7e0ef0c5d976f51d5d5784cfcf2_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=YfdeqDGTLGN1qfraMeq9Q2QTr0u%2FpFIRp7fVmOSPh3M%3D)First pass at Nemo’s run animation. There is little detail and no secondary animation such as the bouncing hair and PJ hood.
 
 
 
@@ -24,7 +24,7 @@ At this time I was learning to animate and finding a style I liked, but also fin
 
 I was also just getting the earliest iterations of my character controller figured out. Here is one of the [first looks](https://twitter.com/diesoftgames/status/1093618367645257728) at my character controller tied together with the placeholder animations for idle, running, and jumping.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/725/9909ad90f1f926a6b1fbbf27bd0a3b9c_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688145602&gif-q=50&q=92&s=3a255b3c6cecd91b8ef0ccddcbcd28ce)Nemo running and jumping for the first time.
+![img](https://i.kickstarter.com/assets/041/469/725/9909ad90f1f926a6b1fbbf27bd0a3b9c_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=P3%2FRYhxwZ0RDoFhKvybvAFTFjNzqmrAhw72TsIau7Xc%3D)Nemo running and jumping for the first time.
 
 
 
@@ -32,7 +32,7 @@ This has changed and grown so much since then, but you can see that a lot of thi
 
 One of the other elements I knew I wanted to pin down very early was the feel for Nemo’s room. It needed to have that sense of quiet repose to contrast your adventures in Slumberland. Here’s the earliest iterations I shared back then of [Nemo’s Bedroom](https://twitter.com/diesoftgames/status/1097950001815322624).
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/737/29f758b0366763da29f7f0108177aafb_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688145690&gif-q=50&q=92&s=21cd645505402b3aedd240810d657e3f)
+![img](https://i.kickstarter.com/assets/041/469/737/29f758b0366763da29f7f0108177aafb_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=tPvGr8D7JQQj8yniqmB%2BWmzuDfMO22BF1dc%2BfjEyFHc%3D)
 
 
 
@@ -42,7 +42,7 @@ The thing that’s funny about sharing these old animations is how rough they lo
 
 By the time we got to the Kickstarter last year, you could see the fully realized version of the bedroom for comparison.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/759/6c0f7c12249d60cb0dc10c30b236e9dd_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688145787&gif-q=50&q=92&s=2aa900158111307e9c8b29c8c2027e4a)Nemo’s bedroom as it appeared in last year’s Kickstarter
+![img](https://i.kickstarter.com/assets/041/469/759/6c0f7c12249d60cb0dc10c30b236e9dd_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=zcdLsAR3M8UtPRr4mirq3ykxmha0CQt1rrtsiXbEFGI%3D)Nemo’s bedroom as it appeared in last year’s Kickstarter
 
 Making a video game is a fairly daunting task as you’re constantly reminded of just how much work it is every step of the way, so it’s nice every now and again to take a look back at the steady progress you’ve been making. 😊
 
@@ -60,13 +60,13 @@ First up, I’ve pinned down the mechanical operations of some of the toys I was
 
 One of the goals I have for all of the toys is they each need to provide you with some unique ability, which is fun to use in and of itself, but also allows you to reach new areas you couldn’t have otherwise. And they should do so without simply being “keys.” My initial ideas for how to make the Bubble Wand grant the player access to new areas was to use water and have the Bubble Wand allow for new interactions within water. The problems here are a) I didn’t like any of the ideas I had come up with for exactly how those interactions work, and b) I often find that underwater areas are simply not fun for me. They change up the core movement gameplay too much and often in a way that feels sluggish. So for now I’ve created a gate that can only be passed with the bubble wand, by blocking this “enemy’s” attack.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/811/6299d0745926616d9f301b8e9f16c97e_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688146124&gif-q=50&q=92&s=d8825c26953976f274f1e2d79bc6e78d)Nemo trying to get past an enemy designed to be countered with the Bubble Wand toy.
+![img](https://i.kickstarter.com/assets/041/469/811/6299d0745926616d9f301b8e9f16c97e_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=GPe1sLfvyWUIGg7KRAeLmYisMoWRJhTrnBNAn0qHvCg%3D)Nemo trying to get past an enemy designed to be countered with the Bubble Wand toy.
 
 This gate will quickly close down hurting you and pushing you back. You’ll need to block its attack to get by (or if you’ve managed to get other toys out of sequence, you might find another way under it).
 
 The other toy I wasn’t happy with was the Grapple Yo-Yo. It needed to be more lenient about connecting with the anchors, and also the release trajectory needed to be more predictable. Now is it’s much easier to hit the target as you’ll be magnetized into the start position with a quick tween into place, and then when you release the swing, you’ll release from one of three exact positions with one of three exact velocities. This means you can always reproduce an exact swing trajectory and use them much more reliably and intuitively.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/828/85dc1db3bceb36c750580310537596d3_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688146222&gif-q=50&q=92&s=453d6709529fead7fa62686fb113f2e7)Here you can see the Grapple Yo-Yo is much better about attaching to the anchors, and the release trajectories occur at fixed positions and velocities
+![img](https://i.kickstarter.com/assets/041/469/828/85dc1db3bceb36c750580310537596d3_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=lEsPZ5MTiGEpGTtdvLttY0eP07ulAyZjFlTqp7gw8nU%3D)Here you can see the Grapple Yo-Yo is much better about attaching to the anchors, and the release trajectories occur at fixed positions and velocities
 
 
 
@@ -74,13 +74,13 @@ The other toy I wasn’t happy with was the Grapple Yo-Yo. It needed to be more 
 
 The Guardian of the Gumdrop Gardens is Jules. She’s been transformed into a Narwhal, and as with Minerva, you’ll need to find her scepter to help her transform back into her human form.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/836/14e945e236a6ad63792e0afa0e3552e2_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688146284&gif-q=50&q=92&s=a87677a90d3adf1dfa301dbc550bfe2a)Jules stuck in Narwhal form
+![img](https://i.kickstarter.com/assets/041/469/836/14e945e236a6ad63792e0afa0e3552e2_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=u%2BLtSI3kAgkxVcjfJP7rEbUp0hx1JlS8nUDsaepfxCk%3D)Jules stuck in Narwhal form
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/840/223defbefd1bc3176f239e7722831f4a_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688146301&gif-q=50&q=92&s=69b42b3a0f0367a8d79b3c0dd309d84a)Jules excited to be back in human form
+![img](https://i.kickstarter.com/assets/041/469/840/223defbefd1bc3176f239e7722831f4a_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=%2BgF7W5O%2FYwjM85zlQDe2JCMklUMaDtpIJM5Pi7F%2Foy0%3D)Jules excited to be back in human form
 
 There’s another character you’ll be introduced to in the Gumdrop Gardens, but for now I’ll just share this concept sketch to pique your interest.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/845/46c70c9b37d8b20053062b1f8861cf16_original.png?ixlib=rb-4.1.0&w=700&fit=max&v=1688146325&gif-q=50&lossless=true&s=b5f25b60a0b83c405cd250c1dfbd9d3b)Mystery character?!
+![img](https://i.kickstarter.com/assets/041/469/845/46c70c9b37d8b20053062b1f8861cf16_original.png?fit=scale-down&origin=ugc&width=700&sig=tq1%2FR2kb0Z5VTBaz2yvfkkGMy4Pb%2BWwqBSLxhR2weJY%3D)Mystery character?!
 
 This character’s attire looks a bit like what Nemo used to wear to the palace. They seem to be keeping their identity hidden though… 
 
@@ -90,7 +90,7 @@ This character’s attire looks a bit like what Nemo used to wear to the palace.
 
 One of the things I’ve started tackling this month is pinning down the details for how I will be handling some of the in-game features that were introduced as Kickstarter stretch goals / bonus rewards, such as the In-game Instruction Manual. I’ve been planning out the systems and UI for having these in-game, and also have begun to sketch some layouts and text contents for the Instruction Manual. I’ve designed the layout after the format used by NES manuals. Here’s a quick peek:
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/852/75c3591ecb92f474bbb3345ddf29bb41_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688146360&gif-q=50&q=92&s=7e39af2969c06a1396e191ec33248d77)A very early sketch for the layout of the Instruction Manual shown with pages side-by-side
+![img](https://i.kickstarter.com/assets/041/469/852/75c3591ecb92f474bbb3345ddf29bb41_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=o7aE8oVH2e3piFmg1%2Ff2VQrkZPdqg9Xzwq4nutnTpnA%3D)A very early sketch for the layout of the Instruction Manual shown with pages side-by-side
 
 Something I’m keeping in mind here is that these booklets will likely appear in-game as fully rendered images (this will allow me to share the same source files for the PDF and possible print versions), so the text will not be dynamically sized. My intended solution for this case is to make sure you have pan and zoom controls available when browsing books. This will be dual-purpose: it will allow you to read any text that may be too small, and also allows you to take a closer look at any artwork you want to get a better look at.
 
@@ -100,11 +100,11 @@ The instruction manual, artbook, bestiary, and music player (something that wasn
 
 In much earlier builds of *Little Nemo* I had a solution for dynamic foliage that would sway as Nemo passed by, but it wasn’t quite as robust as I wanted and was not as performant as I needed it to be. So this week I started work on reintroducing a better pass at this because I want fluid displacement for some “gunk” we have in the Mushroom Marsh and this ultimately is the same solution as needed for making foliage sway.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/858/d1177fbe6bc2dc3d9d0a38e91e1efb19_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688146420&gif-q=50&q=92&s=b6f2e4fb9c824f0c1931d15813f38af6)Debug views in the right-side corners show the tracked velocity of dynamic diegetic bodies
+![img](https://i.kickstarter.com/assets/041/469/858/d1177fbe6bc2dc3d9d0a38e91e1efb19_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=VMrgMA4Ga1s9t0VlZqTseqtWJlnilLaQKrdcg5wI8Fs%3D)Debug views in the right-side corners show the tracked velocity of dynamic diegetic bodies
 
 This is all very much a work-in-progress, but I thought I’d share this debugging view I’m using right now. We’re creating a 2D texture which tracks the velocity of all diegetic dynamic bodies that are on-screen. The result is very similar to a normal-map with the colors representing velocity in the four cardinal directions.
 
-![img](https://ksr-ugc.imgix.net/assets/041/469/863/f6b7b693a7d3700a4aee76ddc9318b4e_original.gif?ixlib=rb-4.1.0&w=700&fit=max&v=1688146458&gif-q=50&q=92&s=f12b6079688e2e2a261516a27f8c3f17)Nemo walking through a prototype for a “gunk” hazard that will appear in the Mushroom Marsh
+![img](https://i.kickstarter.com/assets/041/469/863/f6b7b693a7d3700a4aee76ddc9318b4e_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=mUGOq3V7f%2F28M9Ec5FXPBR9xhcUrqSVXdvas8jRaEkI%3D)Nemo walking through a prototype for a “gunk” hazard that will appear in the Mushroom Marsh
 
 You can see here my greybox pass at the Mushroom Marsh gunk. This is another domain-specific gimmick in addition to the bouncy mushrooms, intended to help create a unique platforming identity for the area.  This gunk hinders your jumping ability so you can only *just* jump out of it. There are also some nasty nightmare creatures (the Marshwallows) that seem to like it. You’ll meet them in a future update.
 

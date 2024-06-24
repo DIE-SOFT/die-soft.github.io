@@ -15,21 +15,21 @@ This past month I’ve been continuing to work on the authoring tooling (this is
 
 The *chunk* (screen-sized pieces of the game world) *edges* (where two chunks meet) can now be adjusted so that they can be open, closed, or secret. Previously I was setting up all these edge chunks manually (dragging around edge colliders to be in just the right spot was pretty annoying), but now in NemoMaker, they will automatically appear at all edges around a room and I can edit them where they touch another room. Whether the chunk edge is open or closed will also affect which chunks are loaded in around the player. A chunk edge being closed effectively means you can’t get through there, so we do some simple path-finding to only load in nearby chunks which the player can actually reach. And a secret chunk edge is similar to open, but the camera won't pass through until the player does, to help disguise that there is something on the other side.
 
-![img](https://ksr-ugc.imgix.net/assets/038/399/069/1b81097212d7be4cd2f13abdb18742c2_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1661525207&gif-q=50&q=92&s=c598905b643a9e3ee8f0edc4142d792e)Here you can see how the chunk edge style will affect how the camera interacts with the edges of chunks
+![img](https://i.kickstarter.com/assets/038/399/069/1b81097212d7be4cd2f13abdb18742c2_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=O8q9uXJZRgsaCCSHpNjnoVA1H7pwjmIsaX%2Bv%2BG5NrxM%3D)Here you can see how the chunk edge style will affect how the camera interacts with the edges of chunks
 
 I've also implemented the ability to use different *draw styles* for different swatches. This allows me to draw large rectangles all at once for the basic collider tiles, horizontal lines for the pass-thru platform tiles, vertical lines for decorational pillars, or 2x2 areas for compound tiles (larger tiles are actually just a collection of multiple tiles). I was previously just free-hand drawing in where the tiles went, which is very painstaking, so this will make it much more fun and easy to draw the world in as I go.
 
-![img](https://ksr-ugc.imgix.net/assets/038/399/085/3ed4a1d64de5fd387442aed32540b509_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1661525303&gif-q=50&q=92&s=590c59ccefea39d7c5501e25fe2edd96)Here you can see how the pass-thru tiles use a horizontal line draw style, but the background wall uses a rectangular draw style
+![img](https://i.kickstarter.com/assets/038/399/085/3ed4a1d64de5fd387442aed32540b509_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=bFl2WeE5oH6a7Z%2F22b7Ie1BbjCkJjdxyX9x%2BD8PMXns%3D)Here you can see how the pass-thru tiles use a horizontal line draw style, but the background wall uses a rectangular draw style
 
 A critical part of all of this is being able to actually use the world that is built in NemoMaker within the actual game, so I’ve got that all working now (previous builds used standard Unity scenes for loading in Slumberland content). Beds can be placed in NemoMaker and then used as checkpoints/spawn-points in the game. NemoMaker shares the same playback logic as the game to make sure the world is being properly loaded in around the player.
 
-![img](https://ksr-ugc.imgix.net/assets/038/399/101/a506652984ce77fdaf217647aa124358_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1661525383&gif-q=50&q=92&s=4d41679dbfc3ef5b3ebd567af2ec70a7)Here’s a sped-up editor view of the rooms loading in around the player to create a seamless world
+![img](https://i.kickstarter.com/assets/038/399/101/a506652984ce77fdaf217647aa124358_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=zt8vteJmKT%2BzyhSYLq6B8O1oFNcWX7nJP9gq%2FiBsbkQ%3D)Here’s a sped-up editor view of the rooms loading in around the player to create a seamless world
 
 I’ve also been continuing to make some content, though not as much since I’ve mostly been focused on NemoMaker. But I did introduce the concept of an in-between zone that appears as a sort of palette cleanser when transitioning from one zone to another in Slumberland. This gives the music time to wind down before we start playing the music for the new zone the player is entering.
 
 And I’ve been working on lots of tiles for the Gumdrop Gardens as well. You might have noticed it was a little sparse before with just the standard collision tiles, but I’ve fleshed out the tile palette for this zone quite a bit.
 
-![img](https://ksr-ugc.imgix.net/assets/038/399/111/3c450ffc42f482e4f0c51f2e7176e583_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1661525449&gif-q=50&q=92&s=e27c541af61a7e49a9f8429a16e56b60)
+![img](https://i.kickstarter.com/assets/038/399/111/3c450ffc42f482e4f0c51f2e7176e583_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=rthI%2BEvb0S%2FekgsGsl77IpbvyPMuqQ%2FU2zLk66EFKxw%3D)
 
 Here’s a WIP version of the in-between zone you’ll encounter when going from one zone to another
 
@@ -41,7 +41,7 @@ We also have some amazing new sound effects for the menus now, courtesy of Jonat
 
 I’m going to show off some of some of this stuff in more detail in a Sleepwalker stream next week on **Thursday, September 1st** at **2pm** (**EDT**). While this isn’t quite playtesting, it gives me an opportunity to test out the Sleepwalker only channels for streaming and show off some of the progress, in more depth, to the biggest supporters. If you backed at the Sleepwalker tier or higher, you can join our [Discord](https://discord.com/invite/9NymgSJAVp) to take part in the stream.
 
-![img](https://ksr-ugc.imgix.net/assets/038/399/133/96839a028a684c4bc6bbf4add7f2d1fa_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1661525595&gif-q=50&lossless=true&s=8ebf66608537a711cb2cbf1f87ad449b)
+![img](https://i.kickstarter.com/assets/038/399/133/96839a028a684c4bc6bbf4add7f2d1fa_original.png?fit=scale-down&origin=ugc&width=700&sig=tpV3PBdx4Qg1KL51YpEUXF4%2FaOypvCxQfrnM4JX6Wqw%3D)
 
 
 
@@ -55,13 +55,13 @@ Then content-wise, there’s plenty to work on for the early build. I have some 
 
 Another fun thing I’m working on is the UI for a banner that displays the zone name whenever you enter a new zone. I love the zone name animation in Sonic Mania, so that is a big inspiration for this, although it needs to not get too in-your-face since it will happen while the player is still in control (since zone changes are seamless). Here’s a quick static mockup of an idea I’m toying with to give you an idea (looking to incorporate that foil sticker aesthetic and lots of bright colors in this one):
 
-![img](https://ksr-ugc.imgix.net/assets/038/399/153/ea959b75d8ff84255b69a4e63c424363_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1661525719&gif-q=50&lossless=true&s=7cc3529b0eb099a635b563716591bd79)
+![img](https://i.kickstarter.com/assets/038/399/153/ea959b75d8ff84255b69a4e63c424363_original.png?fit=scale-down&origin=ugc&width=700&sig=5I5Vhptb3SAf1upZDI84LK0w2PIVIELVMFRW2%2BHSXVs%3D)
 
 ## Kickstarter Friends
 
 This month, the game I want to highlight isn’t quite ready yet for Kickstarter launch, but should be launching in the very near future. I’m super excited for [Dono’s Tale](https://www.kickstarter.com/projects/superitemstudios/donos-tale) and will be streaming a playthrough of the demo on **Saturday, September 3rd** at noon **12pm** (**EDT**) on [Twitch](https://www.twitch.tv/diesoftgames). In the meantime, you should follow their [Kickstarter](https://www.kickstarter.com/projects/superitemstudios/donos-tale) to be notified as soon as it launches, or check out their [Twitter](https://twitter.com/DonosTale).
 
-![img](https://ksr-ugc.imgix.net/assets/038/399/163/a04548bec926bc5902d0dcd69da28d08_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1661525794&gif-q=50&lossless=true&s=2cfe4155dfe8d0be59704d37e53e82af)
+![img](https://i.kickstarter.com/assets/038/399/163/a04548bec926bc5902d0dcd69da28d08_original.png?fit=scale-down&origin=ugc&width=700&sig=NpBHikw%2BE3Q%2Fs9WZMW6BnX%2FRvDXizYAWLhhQeWgJM7Q%3D)
 
 
 

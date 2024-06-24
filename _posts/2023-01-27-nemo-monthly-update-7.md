@@ -11,7 +11,7 @@ One quick announcement ICYMI in our [Discord](https://discord.com/invite/9NymgSJ
 
 ## Get Wishlistin’ 📃
 
-![img](https://ksr-ugc.imgix.net/assets/039/781/517/600a02978000401d5d2d094e227214cc_original.jpg?ixlib=rb-4.0.2&w=700&fit=max&v=1674855505&gif-q=50&q=92&s=6e04a910fe6181beef8859f87dab3bfa)
+![img](https://i.kickstarter.com/assets/039/781/517/600a02978000401d5d2d094e227214cc_original.jpg?fit=scale-down&origin=ugc&q=92&width=700&sig=JMvDsvBNUfSJxqpPuyn85CKGq9vgbf%2BzJ42EHFUAjZg%3D)
 
 
 
@@ -58,7 +58,7 @@ So while there are still some features either missing or in need of some polish,
 
 I tried to hop into as many of the streams as I could, and if not, catch the VOD afterwards, so I’ve compiled a list of all the content creators that I’m aware of that shared this early build with their viewers. And while I don’t want to play favorites too much, there were a few I just have to give shout-outs to.
 
-![img](https://ksr-ugc.imgix.net/assets/039/781/538/3f2c6ccfd58dffbb0a5079aad37bec17_original.jpg?ixlib=rb-4.0.2&w=700&fit=max&v=1674855698&gif-q=50&q=92&s=cad989215531303612c1b9784a6f5953)Nemo and Rocktopus fan-art from Fezudu
+![img](https://i.kickstarter.com/assets/039/781/538/3f2c6ccfd58dffbb0a5079aad37bec17_original.jpg?fit=scale-down&origin=ugc&q=92&width=700&sig=9BxHCpZsnWMDOsAqhpir3j0lLKZiR%2BQSu9CiqftY4Wo%3D)Nemo and Rocktopus fan-art from Fezudu
 
 
 
@@ -111,7 +111,7 @@ That being said, this month’s updates are not the most spoilery. You can of co
 
 One of the things I know I’m going to want in the Mushroom Marsh, is some bouncy mushrooms. Bouncy platforms are such a staple for platformers, the trick is getting them just right. Here’s what I’m testing out now:
 
-![img](https://ksr-ugc.imgix.net/assets/039/781/560/2ff0b26ce3bc5d9989d8b0f7dd70549d_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1674855902&gif-q=50&q=92&s=d871b37e6514a371be1bdafe24502982)
+![img](https://i.kickstarter.com/assets/039/781/560/2ff0b26ce3bc5d9989d8b0f7dd70549d_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=8%2FBDc%2Fp863uJnNz1piUGTUB0Y%2B3xRYtk%2BV4UCgrNkWw%3D)
 
 While my physics system has restitution, and we could simply just simply make a platform fully bouncy that way, that approach is too *realistic* and isn’t predictable for the player (bounce height is determined by your incoming velocity). So instead this platform will just bounce whatever hits it up to a target height. If that thing can jump or pogo (eg. the player) doing so will cause the bounce to be even higher.
 
@@ -119,19 +119,19 @@ You can see here, it’s not very realistic that as soon as the player steps ove
 
 And here’s another idea, this one intended for the Gumdrop Gardens and inspired by Donkey Kong Country 2’s honey. These sticky blocks will immobilize anyone touching them and you’ll need to press jump or down + jump to jump or release from it. This is a fun way to introduce a player to the idea of wall climbing before giving them the Monster Claw.
 
-![img](https://ksr-ugc.imgix.net/assets/039/781/564/a4cfe6dc065f4195214cb7d8e4b6b5da_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1674855936&gif-q=50&q=92&s=fc25d5b04bd1718af610ab7d162551bb)
+![img](https://i.kickstarter.com/assets/039/781/564/a4cfe6dc065f4195214cb7d8e4b6b5da_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=qL4cuqlIyZwyO1EDW7TtExc3xfREdtgnipJksvxHm3A%3D)
 
 I’m fairly sure it will be fun sticking to and jumping from the sides, but having this allows me to explore whether or not they’d be fun as a floor surface to potentially get stuck on and require hopping to advance along it.
 
 I’ve also been exploring new enemy behaviors. The classic Metroidvania style enemy is of course Metroid’s Geemer, which simply follows along a surface.
 
-![img](https://ksr-ugc.imgix.net/assets/039/781/567/f3cdaea4c6d2fa90b43163e7cab9fc59_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1674855977&gif-q=50&q=92&s=9e4d91597e6d63b4c1c085d4cb22967c)
+![img](https://i.kickstarter.com/assets/039/781/567/f3cdaea4c6d2fa90b43163e7cab9fc59_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=V7MVLIuAzYK1f8%2BVaL9XobbTCb8Ak%2FAI9dxV7mkhlgs%3D)
 
 That’s a good start, but where in the game would this kind of enemy be most interesting, and can it be made even more fun to engage with if I add additional behaviors?
 
 And here’s something we haven’t seen in the game yet, but I’ve been excited to get in here to try out: projectile-firing enemies. This one is a very simple design inspired by Mario’s Bullet Bills.
 
-![img](https://ksr-ugc.imgix.net/assets/039/781/581/fe0c2ece470909358b58b2fa0d4b5362_original.gif?ixlib=rb-4.0.2&w=700&fit=max&v=1674856091&gif-q=50&q=92&s=a77b79d7eac606ee5f6b36d55be826ea)
+![img](https://i.kickstarter.com/assets/039/781/581/fe0c2ece470909358b58b2fa0d4b5362_original.gif?fit=scale-down&origin=ugc&q=92&width=700&sig=s6AiJkMpL7v6E7aWYd%2FCxT9ED4OrXu69ZSbBmIZ0uLA%3D)
 
 This could lead to some fun with pogo sticking off of projectiles, or attacking them before they hit Nemo, or simply jumping over or ducking under them. I even have a few different types of projectiles available to test out such as a rolling ball style projectile.
 
