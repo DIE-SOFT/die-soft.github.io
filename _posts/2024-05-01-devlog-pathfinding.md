@@ -107,13 +107,19 @@ I’m glossing over some fairly interesting details here. The desmos graphs I li
 
 ## Path Following Details
 
-I just glossed over the path following logic above, but it’s important that we’ve established that following a path means we’re trying to execute upon a sequence of path segments. The general structure of this looks something like:
+How your entities follow a path is going to be very specific to your circumstances, so I think what I want to do is talk about how I handled this for my use case from a high level overview. For each entity that has a path which needs to be followed, we run this logic each frame:
 
-1. Assuming we have a valid path, and we haven’t already reached the end of it, let’s check if we’re ready to move to the next segment. The way we know if we’re ready to move to the next segment is simply by asking each frame: are we approximately to the location of the node at the end of the current segment?
-   1. If we have reached the next node, check if that is the goal node. If so, we've reached our destination. Otherwise just change our current segment to reflect the one we’re working on now.
-   2. Otherwise, we’re still working through the current segment so continue on.
-2. Now we need a simple method that will tell us what inputs we need for our entity based on the current segment. For instance, if it’s a jumping edge, this will describe the jump velocity and whether or not we should be moving forward. If it’s a pass thru edge, we’ll describe that the entity should activate the pass thru input so it can fall through that platform. This will be very game-logic specific.
-3. Now you simply repeat this each frame, executing the inputs based on the current segment, and each time checking if you’ve reached the end of the current segment (or the end of the entire path).
+1. First, let's make sure our path is actually valid. Is the path itself valid (eg. does it have more than 0 segments)? Have we reached the end of the path (which we know by tracking which segment of the path we're currently on)? If the path is invalid or we've reached the end, the path following logic doesn't need to do anything this frame and we're done here.
+2. But assuming we do have a valid path and we haven't reached the end, we need to check if we've reached the end of our current segment. Knowing if you've reached the end can be kind of tricky and I found I fiddled with this logic a decent amount to get things working correctly. But what I settled on is essentially: if we've come close enough to, or gone past the position of that segment's end node, we're done with this segment. Additionally, for segments which are JumpTo edges, we check to make sure we're grounded before we determining we're done with this segment.
+   1. If we have reached the end of the segment, we'll update our current segment to the next segment in the path. But if that was the last one, then we have reached the end of our path and we're done here.
+3. Now that we know we have a valid path, and we have some path segment we are trying to reach the end of, we need to figure out how to tell our entity to actually move in a way that brings us closer to reaching this segment's end node. Effectively, you'll want to branch on the **EdgeType** of the segment you're currently working on, and set your entity's inputs accordingly. For instance, if we're on a WalkTo segment, I set our heading to ensure we're facing the target node, and then tell the entity to start walking.
+
+This loop essentially boils down to:
+
+1. Did we reach the target for our current segment yet?
+2. What input values do we need to move our entity towards the target?
+
+Again, these kinds of details are going to be very game-specific, but I'm happy to share more about my specific solution via [**Discord**](https://discord.com/invite/9NymgSJAVp). This is one of the most complex parts of all of this, but I didn't want to bog everything down with very specific code samples from my specific use case, so I'm trying to share how I thought about this solution more holistically.
 
 ## Tying it all Together
 
