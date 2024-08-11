@@ -1,8 +1,8 @@
 ---
 
-title: Pathfinding in a 2D Platformer Context
-description: Going into all the details of our how Little Nemo's buddy pathfinding is achieved.
-image: /assets/todo-preview.png
+title: Pathfinding in a 2D Platformer
+description: An end-to-end look at how pathfinding is achieved in Little Nemo.
+image: /assets/2024-08-11-preview.png
 
 ---
 
