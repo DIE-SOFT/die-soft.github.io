@@ -2,7 +2,7 @@
 
 title: Pathfinding in a 2D Platformer
 description: An end-to-end look at how pathfinding is achieved in Little Nemo.
-image: /assets/2024-08-11-preview.png
+image: /assets/devlog/2024-08-11-preview.png
 
 ---
 
