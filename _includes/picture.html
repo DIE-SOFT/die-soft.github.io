@@ -1,0 +1,12 @@
+{% assign img = include.img %}
+<p>
+    <figure>
+        <picture>
+            <source type="image/avif" srcset="/assets/images/posts/{{ page.slug }}/{{ img }}.avifs" >
+            <source type="image/webp" srcset="/assets/images/posts/{{ page.slug }}/{{ img }}.webp" >
+            <source type="image/mp4" srcset="/assets/images/posts/{{ page.slug }}/{{ img }}.mp4" >
+            <img {% if include.stretch %}class="full-width"{% endif %} src="/assets/images/posts/{{ page.slug }}/{{ img }}.png" alt="{{ include.alt }}" />
+        </picture>
+    </figure>
+    <figcaption>{{ include.caption }}</figcaption>
+</p>

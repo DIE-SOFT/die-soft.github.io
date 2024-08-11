@@ -147,6 +147,10 @@ footer.diesoft {
     margin-right: auto;
     margin-top: 1em;
     margin-bottom: 1em;
+
+    &.full-width {
+        width: 100%;
+    }
 }
 
 .copyright-notice {
@@ -162,7 +166,7 @@ footer.diesoft {
     em {
         font-style: normal;
         font-weight: bold;
-        color: $diesoft-blue;
+        color: $diesoft-darkblue;
     }
 
     .markdown-body {
@@ -177,7 +181,7 @@ footer.diesoft {
         strong {
             font-style: normal;
             font-weight: bold;
-            color: $diesoft-blue;
+            color: $diesoft-darkblue;
         }
 
         h2 {
@@ -189,7 +193,12 @@ footer.diesoft {
             font-size: 1em;
         }
 
-        p:has(img) {
+        figure {
+            margin: 0 auto;
+        }
+
+        p:has(img),
+        figcaption {
             text-align: center;
             color: $diesoft-gray;
             font-size: .8em;
