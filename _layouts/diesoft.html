@@ -7,11 +7,10 @@ layout: default
             <a href="/"><img src="/assets/images/diesoft/header-logo.png" srcset="/assets/images/diesoft/header-logo@2x.png 2x" /></a>
             <div class="flex-filler"></div>
             <ul class="social flex-row">
-                <li><a href="mailto:contact@diesoft.games"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#envelope"/></svg></a></li>
-                <li><a href="https://discord.com/invite/9NymgSJAVp"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#discord"/></svg></a></li>
-                <li><a href="https://twitter.com/diesoftgames"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#twitter"/></svg></a></li>
-                <li><a href="https://tiktok.com/@diesoftgames"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#tiktok"/></svg></a></li>
-                <li><a href="https://store.steampowered.com/app/2074630/Little_Nemo_and_the_Guardians_of_Slumberland"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#steam"/></svg></a></li>
+                <li><a href="{{ site.mailchimp_url }}""><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#envelope"/></svg></a></li>
+                <li><a href="{{ site.discord_url }}"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#discord"/></svg></a></li>
+                <li><a href="{{ site.twitter_url }}"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#twitter"/></svg></a></li>
+                <li><a href="{{ site.steam_url }}"><svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#steam"/></svg></a></li>
             </ul>
         </div>
     </header>
@@ -31,6 +30,10 @@ layout: default
             <a class="py-2" href="{{ site.mailchimp_url }}">
                 <svg fill="currentColor"><use xlink:href="/assets/images/bootstrap-icons-1.8.1/bootstrap-icons.svg#envelope"/></svg>
                 <span>Sign up for updates!</span>
+            </a>
+            <div class="flex-filler"></div>
+            <a class="py-2" href="mailto:{{ site.contact_email }}">
+                <span>Contact us</span>
             </a>
             <div class="flex-filler"></div>
             <span class="copyright-notice">
