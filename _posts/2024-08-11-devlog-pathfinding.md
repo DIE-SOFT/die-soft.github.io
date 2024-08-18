@@ -26,11 +26,13 @@ If you finish reading and are curious about specific implementation details, I'm
 
 The player character in Little Nemo has a variety of mobility options available (increasingly so as they unlock new abilities) and the Little Buddies can only run and jump, so our solution is to have them use pathfinding to follow along with Nemo. So let's break down what kind of work needs to happen to accomplish this…
 
+As for the technical context of what I'm describing, I'm writing all of this in C# for my Unity project, but because I'm talking about things at a high level of abstraction, you could apply these ideas in other languages and game engines. The important thing to keep in mind here is simply that we're working in a 2D world which is composed of tiles that conform to a grid. Whether you're using Unity's or Godot's tilemaps to build your world shouldn't matter.
+
 
 
 ## General Overview
 
-Our pathfinding solution breaks down into three major areas: **building a world graph**, **pathfinding**, and **path following**. I'll quickly outline each of these steps before getting into the details of each.
+Our pathfinding solution breaks down into two major areas: **building the world graph**, and then using that graph to do **pathfinding and path following**. I'll quickly outline these steps before getting into the details of them.
 
 ### The World Graph
 
@@ -40,21 +42,41 @@ In my case, Slumberland is mostly composed of tilemaps that follow a uniform gri
 
 ![img](https://i.ibb.co/mX9frVX/pathfinding-edges.png)A debug view of the world graph overlaid on a small portion of the world terrain. Each node has different colors that convey what kind of node it is, and the lines between them are the color-coded edges.
 
-### Pathfinding
+### Pathfinding and Path Following
 
-Despite "pathfinding" being in the title of this post, it's actually one of the least interesting parts of all of this. We're using the [A* algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to do pathfinding, and there are plenty of articles out there describing how to leverage A*, but I'm more interested in discussing how this step gets integrated into the whole process. To use a pathfinding algorithm like this, we need our graph and which nodes from within that graph are our **starting** and **goal** nodes. The resulting output from this pathfinding algorithm will be a **path** (or lack thereof if no valid path from start to goal exists).
+Despite "pathfinding" being in the title of this post, it's actually one of the least interesting parts of all of this. We're using the [A* algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to do pathfinding, and there are plenty of articles out there describing how to leverage A*, but I'm more interested in discussing how this step gets integrated into the whole process. To use a pathfinding algorithm like this, we need to supply the algorithm with our graph, as well as which nodes from within that graph are our **starting** and **goal** nodes. The resulting output from this pathfinding algorithm will be a **path** (or lack thereof if no valid path from start to goal exists).
 
-The **path** is essentially just be an ordered sequence of edges that your entity can follow to go from node to node, eventually reaching the goal node.
+The **path** is essentially just an ordered sequence of edges that your entity can follow to go from node to node, eventually reaching the **goal** node.
 
 ![img](https://i.ibb.co/c1532T9/path.webp)You can see here how Lampet’s path is a collection of edges from the world graph. The crosshairs show which node Lampet is currently heading towards. Green is a walking edge, cyan is a jumping edge, and red is a falling edge.
 
-### Following the Path
-
-Once we have a path, we need to tell our entity how to follow it. This is probably the next hardest part of this entire system to figure out, and the implementation details will heavily depend on the structure of your game logic. Generally speaking though, you'll want to keep track of which **segment** of the path the entity is currently traversing, describe to the entity how to follow that segment of the path, and then also watch for when we've reached the end of that segment and can move on to the next (or if there is no next segment, we've reached our goal).
+Once we have a path, we need to tell our entity how to follow it. The implementation details will heavily depend on the structure of your game logic. Generally speaking though, you'll want to keep track of which **segment** of the path the entity is currently traversing, describe to the entity how to follow that segment of the path, and then also watch for when we've reached the end of that segment and can move on to the next (or if there is no next segment, we've reached our goal).
 
 In this context, a path **segment** roughly corresponds to a graph edge, but will contain other details as well, so it’s good to think of the path **segment** as its own concept with its own name, rather than just calling it an edge.
 
 ![img](https://i.ibb.co/VH6S65f/pathfollowing.webp)My Alien Monster follows along, running, jumping, and passing through platforms as the path dictates.
+
+
+
+### A Quick Example
+
+Before we get into the details of these steps, I think it will be helpful to help anchor your understanding of how the graphs are used by the pathfinding logic with a quick example. This will hopefully better help you understand how nodes and edges are used by the pathfinding logic.
+
+In this example, we'll just have Panda Tuxpin trying to get to the Star, and we'll examine each step along the path.
+
+![img](https://i.ibb.co/hMJz7sg/simple-example-1.png)
+
+At the start here, things are pretty simple. We're at a Surface node, and it has a WalkTo edge to the neighboring Surface node to our right. That moves us closer to the goal and walking from one surface to another is the easiest thing to do, so that's what Panda Tuxpin will do here.
+
+![img](https://i.ibb.co/bQDFD8q/simple-example-2.png)
+
+At this node however, things get a little trickier. We can walk to our neighboring Surface node to the right, but it is also a HazardSurface. Since we want to avoid Hazards if possible, this node is fairly expensive to traverse, so let's keep looking at other edges heading out from this node.
+
+Surface nodes will also have JumpTo nodes to most nearby Surface nodes, and although jumping also has a cost associated with it, it's less expensive than getting hurt by the hazard. Unfortunately, there is not a JumpTo node that jumps us straight to the Goal because that pillar of Solid tiles is blocking us, but we do have a JumpTo node to the top of that pillar. That's going to be the best way to get closer to the goal for the lowest cost, so that's what Panda Tuxpin would do next.
+
+![img](https://i.ibb.co/vHZBVqZ/simple-example-3.png)
+
+Now that we're up here, there's no neighboring Surface node for us to walk to to get closer to the goal, but we do have an edge that allows us to fall directly onto the goal. Falling is relatively inexpensive so that is the sensible next step Panda Tuxpin would take and would reach the goal.
 
 
 
@@ -71,12 +93,14 @@ I glossed over quite a bit in describing the graphs above, so I'm going to dig i
 - **Edges**: This needs a *from-node* and a *to-node*. Like the Node, it will have an **EdgeType**. And importantly, it will have some **cost** associated with it.
   - **EdgeType**: This is an enum which should roughly correspond to the types of locomotion our entities have. For instance, my EdgeType includes: WalkTo (simply horizontal traversal to a neighboring node), JumpTo (this is what defines that we can jump from one node to another), PassThruTo (for our PassThru platforms that the entity can simply drop through whenever desired).
   - **Cost**: This is an essential element to pathfinding. Cost roughly corresponds to how quickly or easily we can traverse an edge. The pathfinding algorithm will want to find the path to the target with the lower cost. I have a PathingCosts static class which has some constants and static functions I can use to calculate the cost to go from node A to node B with a given EdgeType. You can adjust these costs to your liking to incentivize and disincentivize different traversal methods. For instance, in my solution the cost for entering and exiting a Surface node is higher if that Surface is tagged as a SurfaceHazard. This causes the Buddies to avoid stepping on any hazards *if they can easily avoid it*, but also allows them to quickly hop on hazards if there are no better paths to take.
-- **Graph Details**: As you can tell, the graph we're describing is uniquely tailored for the entity we need to move through the world. In my case I only have these Little Buddies using the graph, so it is custom tailored for them. They are also exactly one unit tile in size, which means they can fit through any one-tile tall or wide gaps, making all of this much easier. If we had other, larger entities with different locative capabilities that required pathfinding, they would likely need their own graphs, and you would need to decide what logic could be shared between them when building those graphs. For instance, if we had entities that could not jump, we could create a second graph for them which uses the same nodes, but which has none of the JumpTo edges between nodes.
+- **Graph Details**: As you can tell, the graph we're describing is uniquely tailored for the entity we need to move through the world. In my case I only have these Little Buddies using the graph, so it is custom tailored for them. They are also exactly one unit tile in size, which means they can fit through any one-tile tall or wide gaps, making all of this much easier. If we had other, larger entities with different locomotive capabilities that required pathfinding, they would likely need their own graphs, and you would need to decide what logic could be shared between them when building those graphs. For instance, if we had entities that could not jump, we could create a second graph for them which uses the same nodes, but which has none of the JumpTo edges between nodes.
   - **Bounds**: Something you need to consider is the bounds of your graph. Are you graphing out an entire level all at once, breaking it up into multiple parts? In my case, I have opted to simply graph out the area of the world directly around the player by some small, arbitrary amount. As we approach those bounds, I simply request that a new graph be made for the bounds around the player once again. Your solution could be even simpler, and this graph could even get baked in at authoring time and then is just loaded in if you have some entity that needs to make use of it. I can get away with my runtime solution because I'm deprioritizing this work on a background thread since it's not essential (we still have the old graph to work with until the new one finishes generating, and even if we exceeded those bounds before a new graph was generated, the Buddy will probably still have a relevant path to be following in the meantime).
 
 ## Sequence of Tasks to Build a Graph
 
 Now that we understand a bit more about the details of what this graph looks like, let’s dig into how we build that graph.
+
+![img](https://i.ibb.co/5Fq6CjT/graph-building-anim.webp)This is what our sequence will look like as we populate the graph in the steps below.
 
 ### Populating the Graph with Nodes
 
@@ -99,7 +123,7 @@ This is where you'll have a lot of very specific logic based on your needs. Gene
 While iterating over every node in the graph:
 - **Walking**: If it is flagged with NodeType.Surface, create a WalkTo edge to any nodes to the left or right that are also flagged as NodeType.Surface.
 - **Falling**: If it is tagged as a NodeType.Ledge (this is what we tag nodes adjacent to surfaces which aren’t surfaces themselves, ie. if we can walk off a surface) or NodeType.PassThru, then we’ll find any surface nodes we can drop down to, considering both falling straight down and falling while moving forward (and here’s my [desmos link](https://www.desmos.com/calculator/4pzk7tuw2b) for how to calculate the latter).
-- **Jumping**: If it is flagged with NodeType.Surface, check if there are any NodeType.PassThru which we can jump to directly above (just using our jump height for that). Then we also check for any other surfaces we can jump to. This part is probably the most complicated portion of all of this. Essentially what I’m doing for this is considering that our entity is probably limited by some jump height and some horizontal speed. When can then look at every nearby node and see if any jumping arc gets us to it without colliding. Since we’re dealing with axis-aligned bounding boxes, that’s actually very achievable: we can check for collisions along the parabola of our jump along each of the four corners of our entity’s collider box. Here’s the [desmos link](https://www.desmos.com/calculator/dyuzpw3rdq) for what that looks like. If we can jump to that node without colliding with something on the way, this edge simply stores the start velocity that will produce the exact parabola we checked for collisions (and our entity will jump using that specific velocity when following the path).
+- **Jumping**: If it is flagged with NodeType.Surface, check if there are any NodeType.PassThru which we can jump to directly above (just using our jump height for that). Then we also check for any other surfaces we can jump to. Essentially what I’m doing for this is considering that our entity is probably limited by some jump height and some horizontal speed. When can then look at every nearby node and see if any jumping arc gets us to it without colliding. Since we’re dealing with axis-aligned bounding boxes, that’s actually very achievable: we can check for collisions along the parabola of our jump along each of the four corners of our entity’s collider box. Here’s the [desmos link](https://www.desmos.com/calculator/dyuzpw3rdq) for what that looks like. If we can jump to that node without colliding with something on the way, this edge simply stores the start velocity that will produce the exact parabola we checked for collisions (and our entity will jump using that specific velocity when following the path).
 
 ![img](https://i.ibb.co/YcB8jyp/edge-gizmos.png)And now finally we have the same context as shown above, but with all of the edges drawn in as well. Each of these lines represents how a Little Buddy could possibly get from one node to another.
 
@@ -119,15 +143,13 @@ This loop essentially boils down to:
 1. Did we reach the target for our current segment yet?
 2. Set our entity's input values to what we need to move our entity towards the target.
 
-Again, these kinds of details are going to be very game-specific, but I'm happy to share more about my specific solution via [Discord](https://discord.com/invite/9NymgSJAVp). The logic for finding which surface nodes we can jump to from any other is one of the most complex parts of all of this (I probably could have done an entire blog post just about that) but I don't want to get too hung up on that detail and lose sight of the bigger picture of how the pathfinding all comes together. So let's move on to getting these ideas all working together.
-
 ## Tying it all Together
 
 We've gone into detail about how we generate the path, use it for pathfinding, and then how to use those paths to move our entities. But that's not the whole story, we need to tie all these things together. So I'm going to give a quick look at what all that looks like for my Little Buddy pathfinding, and then also some additional things we do to help smooth over failure scenarios for the pathfinding.
 
 **Overview of Important ECS Components and Steps We Use**
 
-1. There is a Graphable behaviour which is in charge of watching for changes to our tilemaps and regenerates our pathfinding graph whenever a tilemap is modified (because we sometimes destroy tiles for instance), or whenever we've moved far enough that we risk reaching the bounds of the current pathfinding graph. This is runtime logic in my implementation, but I suspect in a lot of, if not most, use cases you'd be doing this graph building logic at authoring time instead.
+1. There is a Graphable MonoBehaviour which is in charge of watching for changes to our tilemaps and regenerates our pathfinding graph whenever a tilemap is modified (because we sometimes destroy tiles for instance), or whenever we've moved far enough that we risk reaching the bounds of the current pathfinding graph. This is runtime logic in my implementation, but I suspect in a lot of, if not most, use cases you'd be doing this graph building logic at authoring time instead. 
 2. Our Little Buddies have a **PathFollower** component. This component holds our entities' state about the Path they're currently following, and which Segment of the Path they're currently working on.
 3. Then there is a BuddyTagAlongSystem which is watching for the movement of the player. Whenever the player moves to a new tile/node, this system will find the nearest appropriate node that the Buddy should head to (there's a bit of logic hiding in here where we look behind the player and also look downwards to find a valid surface node that is close to, but behind the player). Whenever we determine that the most appropriate node for the Buddy to head to has changed, we'll add a **NewPathRequest** component to it.
 4. Whenever one of our Buddies is tagged with the **NewPathRequest** component, this will trigger an asynchronous (because we let it run on a background thread and don't want it blocking normal game logic) call to do the A* pathfinding from the buddy's current node to the target node found in the previous step. When that pathfinding is done, it updates the Path that is stored in the **PathFollower** component.
