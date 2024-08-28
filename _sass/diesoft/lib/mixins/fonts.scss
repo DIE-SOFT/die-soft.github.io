@@ -1,6 +1,7 @@
 @mixin font-baloo-thambi {
-    font-family: 'Baloo Thambi 2', serif;
+    font-family: 'Baloo Thambi 2', system-ui;
     font-weight: 500;
+    font-optical-sizing: auto;
 
     a,
     b,
@@ -11,8 +12,9 @@
 }
 
 @mixin font-montserrat {
-    font-family: 'Montserrat', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: regular;
+    font-optical-sizing: auto;
 
     a,
     b,
