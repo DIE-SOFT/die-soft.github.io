@@ -49,6 +49,19 @@ a.cta {
     &:hover {
         background-color: darken($diesoft-hotpink, 15%);
     }
+
+    &.full-width {
+        width: 100%;
+        text-align: center;
+        
+        svg {
+            width: 1.5em;
+            height: 1.5em;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: .5em;
+        }
+    }
 }
 
 nav {
