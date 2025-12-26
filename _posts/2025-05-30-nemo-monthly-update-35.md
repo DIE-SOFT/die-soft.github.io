@@ -1,7 +1,7 @@
 ---
 
 title: Monthly Update 35
-description: 
+description: MIX Showcase, Timeline updates, and a peek at Haunted Hollow
 image: /assets/images/devlog/2025-05-30-preview.png
 ---
 
