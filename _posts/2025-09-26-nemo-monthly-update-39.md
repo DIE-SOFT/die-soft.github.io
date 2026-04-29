@@ -1,7 +1,7 @@
 ---
 
 title: Monthly Update 39
-description: 
+description: Behind-the-scenes making of Nemo's PJs
 image: /assets/images/devlog/2025-09-26-preview.png
 ---
 
@@ -14,12 +14,12 @@ And speaking of the end of September, just a quick reminder: the late pledges wi
 And another important announcement ICYMI: **we’ll be doing another round of playtesting** a week from next Monday. This one will cover the middle portion of the game and I’m estimating it to be about 3 - 5 hours of gameplay that will be covered. If you are NOT already a part of our playtesting group and would like to be, please sign up [here](https://docs.google.com/forms/d/1B0Lc12ziqH4i15YCeV33dl4uzG5ljpqzZdoKLlQBfzE/viewform). I just ask that you only sign up if you’re able to commit a few hours to play through, and then a bit more time to give feedback based on what you played. You’ll have two weeks to play through and will receive a feedback form during that time, but I also encourage posting feedback and bugs into our Discord playtesting channels which I ask any playtesters to join. And if you’re already a playtester and now someone that you think would be a great fit, please forward that link on to them. It’s publicly available for anyone to apply!
 
 Okay, so before I get into it here, I just want to mention there are some minor spoilers in here where I’ll be discussing the specifics of some of the PJs you can acquire, but unless you’re on a *very* strict no-spoilers diet, I think this will be fine.
- 
+
 
 # More Behind the Scenes: Making PJs
 
 Everyone seemed to enjoy seeing more about the behind-the-scenes process stuff I shared in last month’s [making an enemy](https://www.kickstarter.com/projects/diesoft/little-nemo/posts/4471329) update. So I thought I would continue with something similar this month and show what goes into making a pair of Nemo’s pajamas.
- 
+
 
 ### **About Nemo's PJs**
 
@@ -99,12 +99,12 @@ Since I'm happy with this one, now I’ll draw a more finalized version of the s
 ![img](https://i.kickstarter.com/assets/050/996/741/741e190d656d54e87f358055427026d7_original.webp?fit=scale-down&origin=ugc&q=92&v=1758895414&width=700&sig=DQdugP4EzgX6VFqcnRJWyBuJD8i1nVgoU3O%2BotQJlM0%3D)The Dino PJs in action! I'll probably continue making minor tweaks, I don't love the transformation smoke effect right now for instance, but it's all working.
 
 And that is a full look at how I’ve made a pair of PJs for Nemo from start to finish! Getting these PJs to the player is simply a matter of drawing a dresser into the world and selecting the PajamaType.Dino enum option, or making it available by using a simple macro via the dialogue system (if we’re purchasing them from an NPC). But I won’t say too much more about that, you’ll have to find these PJs in the game yourself when you play! 
- 
+
 
 # What I worked on this Month 💪
 
 And as usual, while a lot of what I worked on can’t be shared now, there are a few new things that I want to show off. And I think these things are all fairly spoiler free. This is all stuff you’ll discover even just by playing the demo, so the same warning as above stands, unless your spoiler-free diet is *very* strict, I think you’ll be fine to read along.
- 
+
 
 ## Lucky Coins UI 🪙
 
@@ -117,7 +117,7 @@ And we also now have an announcement when you collect a shard, as well as one fo
 ![img](https://i.kickstarter.com/assets/050/997/063/acc258ab2984e1124f944ec2230764e8_original.webp?fit=scale-down&origin=ugc&q=92&v=1758896511&width=700&sig=NWWAeMqQktJXtwppMnKViy8l%2F6uqCRwTSsf%2Bv%2F4HbRY%3D)Nemo collecting a fourth coin shard and completing the first of three Lucky Coins.
 
 I had to do a little bit of cleanup and refactoring of my announcement logic while I did this because there were some other item collection announcements that needed to be made which we didn’t have before. Now you’ll get proper announcements when collecting Music Track Cassettes, Artbook Page Unlocks, and Blue Moons (including a different announcement when you collect enough to have unlocked Fast Travel for that domain).
- 
+
 
 ## Powerline to the Professor 📞
 
@@ -132,7 +132,7 @@ I added the “attract mode” to the main menu earlier this year, and I believe
 ![img](https://i.kickstarter.com/assets/050/997/208/e223541753063e30d18f38997edf6a7c_original.webp?fit=scale-down&origin=ugc&q=92&v=1758897069&width=700&sig=yjm7TNxBG4kEm36hfU1BBhjcMHiB1x2vxjODToq%2BbpY%3D)The new transition into the attract mode video zooms in on Nemo's TV.
 
 So it’s been a very busy month, as I’ve also been working on lots of hidden stuff that is either too mundane to show or is top secret, but we’re on track to get things playtested to make sure the game is as fun as it can be.
- 
+
 
 # That’s it for this month 👋
 
