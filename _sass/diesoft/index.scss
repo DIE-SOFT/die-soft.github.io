@@ -257,6 +257,13 @@ ul.posts {
     line-height: 1.75em;
 }
 
+video.banner {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 736/212;
+}
+
 // Media Queries
 // The header breaks down about here, so we need to shrink it
 @media only screen and (max-width: 430px) {
